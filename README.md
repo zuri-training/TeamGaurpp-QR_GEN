@@ -33,7 +33,17 @@ User: Authenticated
 
 ### Screenshot
 This incude images of our design sketch, Data Schema, and the Project Design
-![](./screenshot.jpg)
+
+![](images/d1.png)
+![](images/d2.png)
+![](images/d3.png)
+![](images/d4.png)
+![](images/d5.png)
+![](images/d6.png)
+![](images/d7.png)
+![](images/data-schema.PNG)
+![](images/mood-board.PNG)
+
 
 ### Links
 
