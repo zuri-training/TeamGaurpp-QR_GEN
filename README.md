@@ -57,7 +57,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 The work is done by the following team
 
-- Website - [Add your name here](https://www.your-site.com)
+- [Add your name here](https://github.com/USERNAME)
 
 
 
