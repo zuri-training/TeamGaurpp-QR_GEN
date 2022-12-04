@@ -43,7 +43,15 @@ This incude images of our design sketch, Data Schema, and the Project Design
 ## My process
 
 ### Built with
-
+FRONTEND TECHNOLOGIES
+- HTML
+- CSS
+- Javascript
+BACKEND TECHNOLOGIES
+- Node.js
+- Express
+DATABASE
+- MongoDB
 
 
 ### Continued development
@@ -57,7 +65,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 The work is done by the following team
 
-- [Add your name here](https://github.com/USERNAME)
+- Website - [Add your name here](https://www.your-site.com)
 
 
 
