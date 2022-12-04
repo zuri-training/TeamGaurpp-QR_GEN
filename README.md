@@ -68,8 +68,19 @@ Use this section to outline areas that you want to continue focusing on in futur
 ## Author
 The work is done by the following team
 
-- Website - [Add your name here](https://www.your-site.com)
-
+[Abiodun Shittu](https://www.github.com/Abiodun-Shittu)
+[Williams Ashibuogwu](https://www.your-site.com/wbizmo)
+[Woyengikuro Subiri](https://www.github.com/Kurolinks)
+[Increase-Chris Alaede](https://www.github.com/Ra-Kim)
+[Joseph Ajemba](https://www.github.com/Scotcee)
+[Mary Nledo](https://www.github.com/MaryJaneFrances)
+[Musab Mubaraq Mburaimoh](https://www.github.com/kingmusab-tmt)
+[Chinomso Maxwell](https://www.github.com/Maxlizzy)
+[Ameerah Adeyemi](https://www.github.com/Ameerah10)
+[Alapakasa Tamunoigbeinbia](https://www.github.com/Alapakasa11)
+[Oluwamuyiwa Ashogbon](https://www.github.com/Ekstasee007)
+[Rachel Baba-Yusuf](https://www.github.com/Awesomerach)
+[Chinonye Umeh](https://www.github.com/Umeh-Chinonye)
 
 
 
