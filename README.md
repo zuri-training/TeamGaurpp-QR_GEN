@@ -69,7 +69,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 The work is done by the following team
 
  - [Abiodun Shittu](https://www.github.com/Abiodun-Shittu)
- - [Williams Ashibuogwu](https://www.your-site.com/Wbizmo)
+ - [Williams Ashibuogwu](https://www.github.com/wbizmo)
  - [Woyengikuro Subiri](https://www.github.com/Kurolinks)
  - [Increase-Chris Alaede](https://www.github.com/Ra-Kim)
  - [Joseph Ajemba](https://www.github.com/Scotcee)
