@@ -43,13 +43,16 @@ This incude images of our design sketch, Data Schema, and the Project Design
 ## My process
 
 ### Built with
+
 FRONTEND TECHNOLOGIES
 - HTML
 - CSS
 - Javascript
+
 BACKEND TECHNOLOGIES
 - Node.js
 - Express
+
 DATABASE
 - MongoDB
 
