@@ -33,17 +33,7 @@ User: Authenticated
 
 ### Screenshot
 This incude images of our design sketch, Data Schema, and the Project Design
-
-![](images/d1.png)
-![](images/d2.png)
-![](images/d3.png)
-![](images/d4.png)
-![](images/d5.png)
-![](images/d6.png)
-![](images/d7.png)
-![](images/data-schema.PNG)
-![](images/mood-board.PNG)
-
+![](./screenshot.jpg)
 
 ### Links
 
@@ -79,7 +69,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 The work is done by the following team
 
  - [Abiodun Shittu](https://www.github.com/Abiodun-Shittu)
- - [Williams Ashibuogwu](https://www.your-site.com/wbizmo)
+ - [Williams Ashibuogwu](https://www.your-site.com/Wbizmo)
  - [Woyengikuro Subiri](https://www.github.com/Kurolinks)
  - [Increase-Chris Alaede](https://www.github.com/Ra-Kim)
  - [Joseph Ajemba](https://www.github.com/Scotcee)
