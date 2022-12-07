@@ -1,18 +1,14 @@
 const express = require("express");
-const {json} = require("express");
-const qrcontroller = require("./controllers/qrController");
-const qrroute = require("./routes/qrRoute");
-
-const app = express();
-
-app.use(json());
-
-app.use("/qrroute", qrroute);
+const dotenv = require("dotenv");
+dotenv.config()
 
 const PORT = process.env.PORT || 3000;
+const app = express();
+
+app.use(express.json());;
 
 app.get("/", (req, res) =>{
-  res.send("QRROUTE Testing");
+  res.status(200).json({message:"QRROUTE Testing"});
 });
 
 app.listen(PORT, () => {
