@@ -1,0 +1,28 @@
+{
+  "name": "teamgaurpp-qr_gen",
+  "version": "1.0.0",
+  "description": "QR Code Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuri-training/TeamGaurpp-QR_GEN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuri-training/TeamGaurpp-QR_GEN/issues"
+  },
+  "homepage": "https://github.com/zuri-training/TeamGaurpp-QR_GEN#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
