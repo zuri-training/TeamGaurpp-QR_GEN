@@ -25,18 +25,39 @@
         <form action="#" method="POST">
             <div class="label">
                 <label for="fname">Full name</label>
-                <input type="text" name="fname" placeholder="Enter your fullname" required>
+                    <input 
+                        type="text" 
+                        name="fname" 
+                        placeholder="Enter your fullname" 
+                        required
+                    >
                 <label for="email">Email</label>
-                <input type="email" name="email" placeholder="Email" required>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Email" 
+                        required
+                    >
                 <label for="pwd">Password</label>
-                <input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                    title="Must contain at least an uppercase, a lowercase,one number, one special number"
-                    placeholder="Password" required>
+                    <input 
+                        type="password" 
+                        name="pwd" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least an uppercase, a lowercase,one number, one special number"
+                        placeholder="Password"
+                        required
+                    >
                 <label for="cpwd">Confirm Password</label>
-                <input type="password" name="cpwd" placeholder="Re-type Password"
-                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must be the same with password" required>
+                    <input 
+                        type="password" 
+                        name="cpwd" 
+                        placeholder="Re-type Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must be the same with password" 
+                        required
+                    >
                 <button type="submit" class="btn">Sign Up</button>
-                <p>Already have an account?<a href="#">Sign In</a></p>
+                <p>Already have an account?<a href="/frontend/logInPage/login.html">Sign In</a></p>
                 <button type="submit" class="signup"><img class="google" src="../assets/image/png/google-logo.png" alt="google-logo"> Sign
                     up with Google</button>
             </div>
