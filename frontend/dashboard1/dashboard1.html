@@ -44,10 +44,17 @@
                 </div>
                 <div>
                     <img 
+                        src="/frontend/assets/image/svg/new folder.svg"
+                        alt="add button"
+                    />
+                    <p>Folders</p>
+                </div>
+                <div>
+                    <img 
                         src="/frontend/assets/image/svg/folders.svg"
                         alt="add button"
                     />
-                    <p>Create QR Code</p>
+                    <p>New Folder</p>
                 </div>
             </div>
             <div class="logout">
@@ -58,9 +65,9 @@
         </div>
         <div class = "content">
             <h1>MY QR CODES</h1>
-            <div>
-                <form>
-                    <input type="text"/>
+            <div id="form-div">
+                <form action="POST">
+                    <input type="text" placeholder="Search QR Codes"/>
                     <button>Submit</button>
                 </form>
             </div>
