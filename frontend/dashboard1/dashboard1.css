@@ -1,0 +1,42 @@
+.create-code {
+    justify-content: right;
+    margin-right: 15%;
+}
+
+main {
+    width: 87%;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.sidebar {
+    background: #013255;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    padding: 10%;
+}
+
+.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.sidebarNav {
+    justify-content: space-around;
+}
+
+.logout {
+    justify-content: end;
+    align-items: center;
+}
+
+.sidebar img {
+    margin-right: 5%;
+}
+
+.sidebar div div {
+    display: flex;
+}
