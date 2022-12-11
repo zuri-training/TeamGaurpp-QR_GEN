@@ -1,0 +1,402 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background: #013255;
+    display: flex;
+    height: 52px;
+}
+
+.homeIcon {
+    cursor: pointer;
+    height: 45px;
+    margin-left: 83px;
+    margin-top: 6px;
+    width: 45px;
+}
+
+.home {
+    border: 0px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 23px;
+    height: 30px;
+    margin-left: 8px;
+    margin-top: 12px;
+    padding: 0px;
+    width: 82px;
+}
+
+.container {
+    display: flex;
+}
+
+.leftDiv {
+    height: 441px;
+    margin-left: 72px;
+}
+
+.leftList {
+    border: 1px solid #00000040;
+    border-left: 0px;
+    border-radius: 5px;
+    border-top: 0px;
+    box-shadow: 4px 4px 4px 0px #00000040;
+    margin-top: 0px;
+    width: 280px;
+}
+
+
+.lOne {
+    border-radius: nullpx;
+    color: #141414;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    height: 29px;
+    left: 23px;
+    letter-spacing: 0em;
+    line-height: 29px;
+    margin-right: 0px;
+    margin-top: 16px;
+    padding-right: 0px;
+    padding-top: 20px;
+    text-align: left;
+    width: 220px;
+}
+
+.lTwo{
+    border-radius: nullpx;
+    color: #141414;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    height: 58px;
+    letter-spacing: 0em;
+    line-height: 29px;
+    margin-right: 0px;
+    margin-top: 12px;
+    padding-right: 0px;
+    text-align: left;
+    width: 220px;
+}
+
+.lThree {
+    border-radius: nullpx;
+    color: #141414;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    height: 29px;
+    letter-spacing: 0em;
+    line-height: 29px;
+    margin-right: 0px;
+    margin-top: 12px;
+    padding-right: 0px;
+    text-align: left;
+    width: 240px;
+}
+
+.how {
+    color: #141414;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44.8px;
+    height: 45px;
+    margin-bottom: 0px;
+    margin-left: 76px;
+    margin-top: 35px;
+    width: 234px;
+}
+
+.get {
+    border-radius: 8px;
+    font-family: montserrat;
+    font-size: 19px;
+    font-weight: 500;
+    height: 42px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-left: 62px;
+    margin-top: 80px;
+    padding: 8px 42px 10px 42px;
+    width: 168px;
+}
+
+.rightDiv {
+    margin-left: 50px;
+}
+
+.qr {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44.8px;
+    height: 45px;
+    margin-bottom: 0px;
+    margin-left: 395px;
+    text-align: center;
+    width: 275px;
+}
+
+.squares {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.square {
+    background: #E5E5E5;
+    border-radius: 30px;
+    border-top: 1px solid #B3B1B1;
+    height: 155px;
+    margin-bottom: 20px;
+    margin-left: 109px;
+    width: 250px;
+}
+
+.squareTwo {
+    background: #E5E5E5;
+    border-radius: 30px;
+    border-top: 1px solid #B3B1B1;
+    height: 155px;
+    margin-bottom: 20px;
+    margin-left: 239px;
+    width: 250px;
+}
+
+#squareLeft {
+    margin-top: 30px;
+}
+
+#squareRight {
+    margin-top: 30px;
+}
+
+.smallBox {
+    border: 1px solid #013255;
+    border-radius: 10px;
+    margin-left: 96px;
+    margin-top: 6px;
+    height: 38px;
+    width: 51px;
+    /* width: 50px; */
+}
+
+#link {
+    height: 29px;
+    margin-left: 12px;
+    margin-top: 5px;
+    width: 29px;
+}
+
+#email {
+    height: 25px;
+    margin-left: 9px;
+    margin-top: 7px;
+    width: 34px;
+}
+
+#call {
+    height: 25px;
+    margin-left: 12px;
+    margin-top: 7px;
+    width: 25px;
+}
+
+#whatsapp {
+    height: 27px;
+    margin-left: 12px;
+    margin-top: 5px;
+    width: 27px;
+}
+
+.textLink {
+    border-radius: nullpx;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    height: 29px;;
+    letter-spacing: 0em;
+    line-height: 29.26px;
+    margin: 0px;
+    margin-left: 103px;
+    text-align: center;
+    width: 52px
+}
+
+.textEmail {
+    border-radius: nullpx;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 29.26px;
+    text-align: center;
+    height: 29px;
+    margin: 0px;
+    margin-left: 86px;
+    width: 69px;
+}
+
+.textCall {
+    border-radius: nullpx;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 29.26px;
+    margin: 0px;
+    height: 29px;
+    margin-left: 103px;
+    text-align: center;
+     width: 45px;
+}
+
+.textWhatsapp {
+    border-radius: nullpx;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    height: 29px;
+    letter-spacing: 0em;
+    line-height: 29.26px;
+    margin: 0px;
+    margin-left: 61px;
+    text-align: center;
+    width: 129px;
+}
+
+.longText1 {
+    border-radius: nullpx;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+    width: 240px;
+}
+
+.longText2 {
+    border-radius: nullpx;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-bottom: 3px;
+    margin-left: 56px;
+    margin-top: 5px;
+    text-align: center;
+    width: 144px;
+}
+
+.longText3 {
+    border-radius: nullpx;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-bottom: 3px;
+    margin-left: 67px;
+    margin-top: 5px;
+    text-align: center;
+    width: 111px;
+}
+
+.longText4 {
+    border-radius: nullpx;
+    color: #000000;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    height: 24px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    margin-top: 5px;
+    text-align: center;
+    width: 270px;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #B3B1B1;
+}
+
+.choose {
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-size: 18px;
+    height: 38px;
+    line-height: 28px;
+    margin-left: 84px;
+    padding: 6px 30px 12px 19px;
+    width: 100px;
+}
+
+button {
+    background: #013255;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+}
+
+.back {
+    border-radius: 8px;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    height: 45px;
+    /* line-height: 34.13px; */
+    letter-spacing: 0em;
+    margin-left: 83px;
+    margin-top: 80px;
+    padding: 12px 32px 16px 36px;
+    width: 166px;
+}
+
+.arrowBack {
+    margin-top: 0px;
+    width: 15px;
+}
+
+.continue {
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    height: 45px;
+    letter-spacing: 0em;
+    margin-left: 846px;
+    margin-top: 80px;
+    padding: 12px 32px 16px 36px;
+    text-align: left;
+    width: 166px;
+}
+
+.arrowContinue {
+    margin-top: 0px;
+    width: 15px;
+}
