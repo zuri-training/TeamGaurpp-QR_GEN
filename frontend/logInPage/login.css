@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: #013255;
+    height: 71px;
+}
+
+main {
+    display: flex;
+}
+
+.leftDiv {
+    /* border: 1px solid black; */
+    width: 490px;
+}
+
+.barcode {
+    height: 205px;
+    margin-left: 128px;
+    margin-top: 98px;
+    width: 198px
+}
+
+.rightDiv {
+    margin-top: 110px;
+}
+
+.emaillabel {
+    border-radius: nullpx;
+    color: #013255;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-top: 203px;
+    text-align: left;
+    width: 58px;
+}
+
+.passwordlabel {
+    border-radius: nullpx;
+    color: #013255;
+    height: 24px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-top: 329px;
+    text-align: left;
+    width: 98px;
+}
+
+
+.emailInput {
+    border: 1px solid#013255;
+    border: 1px 013255;
+    border-radius: 5px;
+    font-family: Montserrat;
+    height: 31px;
+    /* margin-left: 554px; */
+    margin-bottom: 30px;
+    padding: 4px;
+    width: 331px;
+}
+
+.passwordInput {
+    border: 1px solid#013255;
+    border: 1px 013255;
+    border-radius: 5px;
+    font-family: Montserrat;
+    height: 31px;
+    padding: 4px;
+    width: 331px;
+}
+
+.forgot {
+    border-radius: nullpx;
+    color: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(0deg, #013255, #013255);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-left: 47px;
+    text-align: left;
+}
+
+.logIn {
+    background: #013255;
+    border: 0px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    height: 37px;
+    left: 554px;
+    padding: 8px 16px 8px 16px;
+    top: 512px;
+    width: 341px;
+}
+
+.click {
+    background: white;
+    border: 0px;
+    color: #013255;
+    cursor: pointer;
+    font-weight: 600;
+    margin-left: 1px;
+}
+
+.googleButton {
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 35px;
+    margin-top: 25px;
+    padding: 8px 16px 8px 16px;
+    text-align: left;
+    width: 341px;
+}
+
+.googleImage {
+    height: 15px;
+    margin-left: 25px;
+    margin-right: 35px;
+}
+
+.signUp {
+    background-color: white;
+    border: 0px;
+    color: #013255;
+    font-weight: 600;
+    margin-left: 1px;
+}
+
+.dont {
+    color: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(0deg, #013255, #013255);
+    border-radius: nullpx;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    height: 24px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    margin-left: 70px;
+    text-align: left;
+}
+
+footer{
+    background: #013255;
+    color: white;
+    display: flex;
+    /* gap: 953px; */
+    height: 71px;
+    margin-top: 50px;
+}
+
+footer button {
+    background: #013255;
+    border: 0px;
+    color: white;
+}
+
+.faq {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 110px;
+}
+
+.about {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.help {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.contact {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 200px;
+}
+
+.facebook {
+    cursor: pointer;
+    height: 20px;
+    margin-top: 25px;
+    width: 20px;
+}
+
+.twitter {
+    cursor: pointer;
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 25px;
+    width: 20px;
+}
+
+.copy {
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 60px;
+    margin-top: 25px;
+}
