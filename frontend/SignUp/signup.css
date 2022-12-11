@@ -20,7 +20,7 @@ header {
     font-weight:500;
     line-height: 24.38px;
     padding-left: 500px;
-    margin: 20px;
+    margin: 19.5px 20px;
 
 }
 
@@ -41,9 +41,10 @@ input[type="password"] {
 .btn {
     width: 45%;
     padding: 7px;
-    margin-top: 15px;
+    margin-top: 13px;
     background-color: #013255;
     color: white;
+    border: none;
     font-size: 20px;
     font-weight:400;
     line-height: 28px;
@@ -69,7 +70,7 @@ a {
     color: black;
     border:none;
     border: 1px solid black;
-    margin-top: 25px;
+    margin-top: 18px;
     padding: 7px;
     font-size: 18px;
     font-weight: 500;
