@@ -18,14 +18,23 @@ header div {
     align-items: center;
 }
 
+a {
+    margin-right: 12%;
+    padding: 1%;
+    margin-left: 1%;
+}
+
+a :hover {
+    font-weight: 600;
+}
+
 h4 {
     font-family: 'Montserrat';
     font-weight: 300;
     font-size: 20px;
     line-height: 30px;
     color: #D2D2D2;
-    margin-left: 1%;
-    margin-right: 12%;
+    
 }
 
 main {
@@ -101,6 +110,8 @@ footer p > a {
     line-height: 24px;
     text-decoration: none;
     color: #D2D2D2;
+    margin: 0;
+    padding: 0;
 }
 
 footer img {
