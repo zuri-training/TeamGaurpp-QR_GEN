@@ -1,84 +1,63 @@
-const User = require('../models/User');
-const { StatusCodes } = require('http-status-codes');
-const CustomError = require('../errors');
-const {
-  createTokenUser,
-  attachCookiesToResponse,
-  checkPermissions,
-} = require('../utils');
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const User = require("../models/User");
 
-const getAllUsers = async (req, res) => {
-  console.log(req.user);
-  const users = await User.find({ role: 'user' }).select('-password');
-  res.status(StatusCodes.OK).json({ users });
+exports.registerUser = async (req, res) => {
+	try {
+		const { name, email, password } = req.body;
+		const checkEmail = await User.findOne({ email: email });
+		if (checkEmail) {
+			return res.status(400).json({ message: "Email Already Exists" });
+		}
+		const hashedPassword = await bcrypt.hash(password, 10);
+		const newUser = await User.create({
+			name,
+			email,
+			password: hashedPassword,
+		});
+		const payload = {
+			id: newUser._id,
+			email: newUser.email,
+		};
+		const token = jwt.sign(payload, process.env.JWT_SECRET, {
+			expiresIn: "24h",
+		});
+		return res
+			.status(201)
+			.json({ message: "User created", user: newUser, token: token });
+	} catch (err) {
+		console.log(err);
+		return res
+			.status(500)
+			.json({ message: "An Error Occurred, Please contact Admin" });
+	}
 };
 
-const getSingleUser = async (req, res) => {
-  const user = await User.findOne({ _id: req.params.id }).select('-password');
-  if (!user) {
-    throw new CustomError.NotFoundError(`No user with id : ${req.params.id}`);
-  }
-  checkPermissions(req.user, user._id);
-  res.status(StatusCodes.OK).json({ user });
+exports.loginUser = async (req, res) => {
+	try {
+		const { email, password } = req.body;
+		const findUser = await User.findOne({ email: email });
+		if (!findUser) {
+			return res.status(404).json({ message: "User Not Found" });
+		}
+		const validPassword = await bcrypt.compare(password, findUser.password);
+		if (!validPassword) {
+			return res.status(401).json({ message: "Invalid Password" });
+		}
+		const payload = {
+			id: findUser._id,
+			email: findUser.email,
+		};
+		const token = jwt.sign(payload, process.env.JWT_SECRET, {
+			expiresIn: "24h",
+		});
+		return res
+			.status(200)
+			.json({ message: "User Logged In", user: findUser, token: token });
+	} catch (err) {
+		console.log(err);
+		return res
+			.status(500)
+			.json({ message: "An Error Occurred, Please contact Admin" });
+	}
 };
-
-const showCurrentUser = async (req, res) => {
-  res.status(StatusCodes.OK).json({ user: req.user });
-};
-// update user with user.save()
-const updateUser = async (req, res) => {
-  const { email, name } = req.body;
-  if (!email || !name) {
-    throw new CustomError.BadRequestError('Please provide all values');
-  }
-  const user = await User.findOne({ _id: req.user.userId });
-
-  user.email = email;
-  user.name = name;
-
-  await user.save();
-
-  const tokenUser = createTokenUser(user);
-  attachCookiesToResponse({ res, user: tokenUser });
-  res.status(StatusCodes.OK).json({ user: tokenUser });
-};
-const updateUserPassword = async (req, res) => {
-  const { oldPassword, newPassword } = req.body;
-  if (!oldPassword || !newPassword) {
-    throw new CustomError.BadRequestError('Please provide both values');
-  }
-  const user = await User.findOne({ _id: req.user.userId });
-
-  const isPasswordCorrect = await user.comparePassword(oldPassword);
-  if (!isPasswordCorrect) {
-    throw new CustomError.UnauthenticatedError('Invalid Credentials');
-  }
-  user.password = newPassword;
-
-  await user.save();
-  res.status(StatusCodes.OK).json({ msg: 'Success! Password Updated.' });
-};
-
-module.exports = {
-  getAllUsers,
-  getSingleUser,
-  showCurrentUser,
-  updateUser,
-  updateUserPassword,
-};
-
-// update user with findOneAndUpdate
-// const updateUser = async (req, res) => {
-//   const { email, name } = req.body;
-//   if (!email || !name) {
-//     throw new CustomError.BadRequestError('Please provide all values');
-//   }
-//   const user = await User.findOneAndUpdate(
-//     { _id: req.user.userId },
-//     { email, name },
-//     { new: true, runValidators: true }
-//   );
-//   const tokenUser = createTokenUser(user);
-//   attachCookiesToResponse({ res, user: tokenUser });
-//   res.status(StatusCodes.OK).json({ user: tokenUser });
-// };
