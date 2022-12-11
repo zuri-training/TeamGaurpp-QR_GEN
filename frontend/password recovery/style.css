@@ -26,10 +26,15 @@ body, html {
     font-family: var(--Poppins);
 }
 
-main {
+/* hide scrollbar */
 
-}
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 
+/* Dashboard 5 styling */
+
+/* header styling */
 .header_d5 {
     height: 55px;
     max-height: 55px;
@@ -112,7 +117,7 @@ main {
 #right_d5 {
     grid-area: right;
     background: transparent;
-    height: 90%;
+    height: 80%;
     padding: 10px;
     padding-top: 70px;
 }
@@ -235,7 +240,29 @@ main {
     margin-bottom: 13px;
 }
 
+.footer_d5 {
+    background-color: var(--main_color);
+    width: 100%;
+    height: 50px;
+    margin-top: 130px;
+    color: white !important;
+}
 
+.footer_d5 a {
+    color: white !important;
+    font-size: 18px !important;
+}
+
+.footer_d5 div {
+    text-align: center;
+    padding: 3px;
+    padding-top: 5px;
+}
+
+.footer_d5 i {
+    color: white !important;
+    cursor: pointer;
+}
 
 .grid-footer_d5-col-3 {
     display: grid;
@@ -245,17 +272,13 @@ main {
 }
 
 .form_d5pw {
-    margin-top: 50px;
+    margin: auto;
+    margin-top: 80px;
     width: 80%;
     height: 430px;
     max-height: 430px;
     text-align: center;
     padding: 15px;
-}
-
-h4 {
-    color: #011E33;
-    font-weight: 400;
 }
 
 .form_d5pw form {
