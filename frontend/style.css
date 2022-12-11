@@ -1,1 +1,10 @@
-/* This is the beginning of the style.css file */
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Poppins, "sans-serif";
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

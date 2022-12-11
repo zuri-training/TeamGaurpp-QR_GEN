@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="frontend/style.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <div class="label">
+                <label for="fname">Full name</label>
+                    <input 
+                        type="text" 
+                        name="fname" 
+                        placeholder="Enter your fullname" 
+                        required
+                    >
+                <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="Email" 
+                        required
+                    >
+                <label for="pwd">Password</label>
+                    <input 
+                        type="password" 
+                        name="pwd" 
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least an uppercase, a lowercase,one number, one special number"
+                        placeholder="Password"
+                        required
+                    >
+                <label for="cpwd">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        name="cpwd" 
+                        placeholder="Re-type Password"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                        title="Must be the same with password" 
+                        required
+                    >
+                <button type="submit" class="btn">Sign Up</button>
+                <p>Already have an account?<a href="/frontend/logInPage/login.html">Sign In</a></p>
+                <button type="submit" class="signup"><img class="google" src="../assets/image/png/google-logo.png" alt="google-logo"> Sign
+                    up with Google</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class = "info-div">
+            <p><a href="\">FAQs</a></p>
+            <p><a href="\">About US</a></p>
+            <p><a href="\">Help</a></p>
+        </div>
+        <div>
+            <span>Contact Us</span>
+            <img 
+                src="../assets/image/png/Twitter.png"
+                alt="twitter"
+            />
+            <img 
+                src="../assets/image/png/Facebook.png"
+                alt="facebook"
+            />
+        </div>
+        <div>
+            <img src="../assets/image/png/Copyright.png" alt="copyright"/>
+            <span>2022 Team Gaurpp</span>
+        </div>
+    </footer>
+
+
+    <script src="signup.js" type="text/javascript" async defer></script>
+</body>
+
+</html>
