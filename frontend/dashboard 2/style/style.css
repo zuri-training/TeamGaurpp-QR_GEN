@@ -1,0 +1,167 @@
+/* This is the beginning of the style.css file */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: Montserrat;
+    font-size: 15px;
+    height: 120vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* first section top navigation bar */
+.topnav{
+    background-color:#013255 ;
+    display: flex;
+    padding: 10px 45px;
+}
+
+.topnav .logo_container{
+    display: flex;
+}
+.topnav h3{
+    margin-top: 10px;
+}
+.topnav .mail a{
+    margin-top: 0.5rem;
+    margin-left:0.5rem ;
+
+}
+.topnav .home h3{
+    padding-top: 0;
+}
+.topnav a img{
+    color: white;
+    padding-bottom: 10px;
+}
+.topnav .mail{
+    display: flex;
+    margin-left: auto;
+}
+.topnav .downarrow{
+    margin-top: 10px;
+}
+.hero_section{
+    background-color: white;
+    margin-bottom: 5rem;
+}
+.hero_section .first_section{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 10px 45px;
+}
+.hero_section .first_section .arrow{
+    margin-top: 15px;
+}
+.first_section .centernum{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: cente;
+}
+.first_section .page_number{
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    border: 2.5px solid #013255;
+    width: 3rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+/* .first_section .page_number :hover{
+    background-color: white;
+    color: gray;
+    width: 100%;
+} */
+.first_section .centernum p{
+    font-size: 15px;
+    font-weight: 900;
+    color: #013255;
+}
+.first_section .container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+.first_section .centernum .line{
+    width: 20%;
+}
+.first_section .div .title{
+    margin-top: 1rem;
+}
+.first_section .line img{
+    padding: 0;
+    margin: 0;
+}
+.container .card{
+    background-color: #d9d9d9;
+    width: 12rem;
+    height: 9rem;
+    margin: 1rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container .card_container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    margin-left: 50px;
+    max-width: 100%;
+}
+.icon_bg{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 6rem;
+    border-radius: 5px 0px;
+    padding-top: 15px;
+    margin-bottom: 1rem;
+}
+.icon_bg .icon{
+    background-color:#D2D0D0;
+    width: 3rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: 2.5px solid #013255
+    
+}
+.icon_bg .icon img{
+    width: 50%;
+    margin: 5px 10px;
+}
+
+/* responsivness and breakpoints */
+@media only screen and (max-width: 360px){
+    .topnav .mail .mail_site{
+        display: none;
+    }
+    .container .hero_section {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 640px){
+    .second_section .container {
+        margin: 10px 20px;
+        padding-left: 10px;
+        max-width: max-content;
+    }
+    .hero_section .first_section .line{
+        display: none;
+    }
+    .container .first_section{
+        padding-left: 0px;
+    }
+    .container .title p{
+        display: none;
+    }
+    .container .card_container{
+        display: flex;
+        flex-direction: column;
+    }
+}

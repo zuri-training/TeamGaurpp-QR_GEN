@@ -1,0 +1,205 @@
+/* This is the beginning of the style.css file */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family: Montserrat;
+    font-size: 15px;
+    height: 120vh;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* first section top navigation bar */
+.topnav{
+    background-color:#013255 ;
+    display: flex;
+    padding: 10px 45px;
+}
+.topnav .logo_container{
+    display: flex;
+}
+.topnav h3{
+    margin-top: 10px;
+}
+.topnav .mail a{
+    margin-top: 0.5rem;
+    margin-left:0.5rem ;
+
+}
+.topnav .home h3{
+    padding-top: 0;
+}
+.topnav a img{
+    color: white;
+    padding-bottom: 10px;
+}
+.topnav .mail{
+    display: flex;
+    margin-left: auto;
+}
+.topnav .downarrow{
+    margin-top: 10px;
+}
+
+/* hero section for the whole white page */
+.hero_section{
+    background-color: white;
+}
+.hero_section .first_section{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    padding: 10px 45px;
+}
+.hero_section .first_section .arrow{
+    margin-top: 15px;
+}
+.first_section .centernum{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: cente;
+}
+.first_section .page_number{
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    border: 2.5px solid #013255;
+    width: 3rem;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50%;
+}
+/* .first_section .page_number :hover{
+    background-color: white;
+    color: gray;
+    width: 100%;
+} */
+.first_section .centernum p{
+    font-size: 15px;
+    font-weight: 900;
+    color: #013255;
+}
+.first_section .container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+.first_section .centernum .line{
+    width: 20%;
+}
+.first_section .div .title{
+    margin-top: 1rem;
+}
+.first_section .line img{
+    padding: 0;
+    margin: 0;
+}
+
+/* second section container */
+.second_section{
+    height: 50vh;
+}
+.second_section .container{
+    margin: 5rem 15rem;
+    padding: 0 5rem;
+}
+.second_section .container .url{
+    display: flex;
+
+}
+.second_section .url h3{
+    padding: 1rem 1rem;
+    color: black;
+    font-weight: 900;
+}
+.second_section .submission_box{
+    padding: 3rem 5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.second_section .submission_box h3{
+    color: black;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+.second_section .submission_box .input{
+    width: 100%;
+   
+}
+.second_section .submission_box input, input[type=text]{
+    height: 2rem;
+    width: 100%;
+    border:1px solid #B4B4B4;
+    border-radius: 4px;
+    padding: 5px;
+}
+.second_section .submission_box p{
+    padding-top: 1rem;
+    color: #B4B4B4;
+}
+.second_section .submission_box .submit_button{
+   text-align: center;
+}
+.second_section .submit_button button{
+    background-color: #013255;
+    color: white;
+    font-family: Montserrat;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #013255;
+    border-radius: 8px;
+}
+.second_section button img{
+    width: 10px;
+    margin-left: 0.3rem;
+}
+/* responsivness and breakpoints */
+
+@media only screen and (max-width: 360px){
+    .container .mail .mail_site{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 360px){
+.second_section .container {
+    margin-top: 10px;
+}
+}
+@media only screen and (max-width: 640px){
+.second_section .container {
+    margin: 10px 20px;
+    padding-left: 10px;
+    max-width: max-content;
+}
+.hero_section .first_section .line{
+    display: none;
+}
+.first_section .container{
+    padding-left: 0px;
+}
+.second_section .container{
+    padding: 0px;
+}
+.second_section .submission_box{
+    padding: 1rem 1rem;
+    margin: 1.5rem;
+}
+.container .title p{
+    display: none;
+}
+.second_section .container{
+    margin-top: 10px;
+}
+.second_section .container p{
+    font-size: 10px;
+}
+.second_section .container h3{
+    font-size: 15px;
+}
+}
