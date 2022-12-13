@@ -4,7 +4,7 @@ dotenv.config();
 
 
 // function that sends email
-const sendEmail = async (email, subject, text) => {
+const sendEmail = async (email, subject, html) => {
     try {
         // reusable transporter object using the default SMTP transport
         const transporter = nodemailer.createTransport({
@@ -21,7 +21,7 @@ const sendEmail = async (email, subject, text) => {
             from: process.env.USER, //sender email address
             to: email,              //Receiver(s) email address
             subject: subject,       //subject of the mail
-            text: text,             //plain text body
+            html: html             //html body of  the mail
         });
 
         console.log("Message successfully sent."); //confirm message sent
