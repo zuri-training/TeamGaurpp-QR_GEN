@@ -1,6 +1,7 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const sendEmail = require("../utils/sendEmail");
 
 exports.registerUser = async (req, res) => {
 	try {
@@ -38,7 +39,7 @@ exports.loginUser = async (req, res) => {
 		const { email, password } = req.body;
 		const findUser = await User.findOne({ email: email });
 		if (!findUser) {
-			return res.status(404).json({ message: "User Not Found" });
+			return res.status(404).json({ message: "Invalid Email Address" });
 		}
 		const validPassword = await bcrypt.compare(password, findUser.password);
 		if (!validPassword) {
@@ -54,6 +55,80 @@ exports.loginUser = async (req, res) => {
 		return res
 			.status(200)
 			.json({ message: "User Logged In", user: findUser, token: token });
+	} catch (err) {
+		console.log(err);
+		return res
+			.status(500)
+			.json({ message: "An Error Occurred, Please contact Admin" });
+	}
+};
+
+exports.forgotPassword = async (req, res) => {
+	try {
+		const { email } = req.body;
+		const findUser = await User.findOne({ email: email });
+		if (!findUser) {
+			return res.status(404).json({ message: "Invalid Email Address" });
+		}
+		sendEmail(
+			findUser.email,
+			"Reset Password",
+			`<p><a href="https://www.linkedin.com/" target="_blank">click here</a> to reset your password</p>`
+		);
+		return res
+			.status(200)
+			.json({ message: "Reset password link sent to mail" });
+	} catch (err) {
+		console.log(err);
+		return res
+			.status(500)
+			.json({ message: "An Error Occurred, Please contact Admin" });
+	}
+};
+
+exports.resetPassword = async (req, res) => {
+	try {
+		const { newPassword, confirmPassword } = req.body;
+		const { email } = req.query;
+		if (newPassword !== confirmPassword) {
+			return res.status(401).json({ message: "Passwords do not match" });
+		}
+		const hashedPassword = await bcrypt.hash(newPassword, 10);
+		await User.findOneAndUpdate({ email }, { password: hashedPassword });
+		return res
+			.status(200)
+			.json({ message: "Password Updated Successfully" });
+	} catch (err) {
+		console.log(err);
+		return res
+			.status(500)
+			.json({ message: "An Error Occurred, Please contact Admin" });
+	}
+};
+
+exports.changePassword = async (req, res) => {
+	try {
+		const { oldPassword, newPassword, confirmPassword } = req.body;
+		const { id } = req.user;
+		const findUser = await User.findOne({ id });
+		if (!findUser) {
+			return res.status(404).json({ message: "Invalid Email Address" });
+		}
+		const validPassword = await bcrypt.compare(
+			oldPassword,
+			findUser.password
+		);
+		if (!validPassword) {
+			return res.status(401).json({ message: "Invalid Old Password" });
+		}
+		if (newPassword !== confirmPassword) {
+			return res.status(401).json({ message: "Passwords do not match" });
+		}
+		const hashedPassword = await bcrypt.hash(newPassword, 10);
+		await User.findOneAndUpdate({ id }, { password: hashedPassword });
+		return res
+			.status(200)
+			.json({ message: "Password Updated Successfully" });
 	} catch (err) {
 		console.log(err);
 		return res
