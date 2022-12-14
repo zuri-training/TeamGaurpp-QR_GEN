@@ -18,6 +18,7 @@
     max-width: 100vw;
     font-family: Montserrat, Poppins, "sans-serif";
     box-sizing: border-box;
+    color: var(--black);
 }
 
 button {
@@ -27,10 +28,7 @@ button {
 a {
     text-decoration: none;
     cursor: pointer;
-}
-
-footer {
-    margin-top: 2rem;
+    color: var(--black);
 }
 
 /* nav */
