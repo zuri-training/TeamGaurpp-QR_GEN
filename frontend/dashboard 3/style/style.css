@@ -81,7 +81,13 @@ a{
 .first_section .centernum p{
     font-size: 15px;
     font-weight: 900;
+    /*  */
+}
+.first_section .div2 p{
     color: #013255;
+}
+.first_section .div1 p , .first_section .div3 p{
+    color: #B4B4B4;
 }
 .first_section .container{
     height: 50px;
