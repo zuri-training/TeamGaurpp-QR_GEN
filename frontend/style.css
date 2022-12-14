@@ -1,7 +1,21 @@
+/* body */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+/* variables */
+:root {
+    --main_color: #013255;
+    --black: #191919;
+    --grey: #B4B4B4;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+}
+
 *, html, body {
     margin: 0;
     padding: 0;
     font-family: Montserrat, Poppins, "sans-serif";
+    box-sizing: border-box;
 }
 
 a {
