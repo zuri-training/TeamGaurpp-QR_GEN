@@ -14,7 +14,7 @@ header {
 
 header div {
     display: flex;
-    padding-left: 10%;
+    padding-left: 5%;
     align-items: center;
 }
 
@@ -38,7 +38,6 @@ h4 {
 }
 
 main {
-    height: 60vh;
     width: 80%;
     margin: auto auto;
     display: grid;
