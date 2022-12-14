@@ -81,38 +81,151 @@ h1 {
     margin-left: 17%;
 }
 
-footer {
-    margin-top: 50px;
-    height: 50px;
-    display: grid;
-    grid-template-columns: 45% 25% 30%;
+.footer-container {
     background: #013255;
+    color: white;
+    display: flex;
 }
 
-footer div {
-    display: flex;
-    align-items: center;
+.footer-container a {
     color: white;
 }
 
-footer .info-div {
-    justify-content: center;
-}
-
-footer p {
-    margin: 0 8%;
-}
-
-footer p > a {
+.footer-pages {
+    font-family: Montserrat;
+    font-size: 38px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #D2D2D2;
-    margin: 0;
-    padding: 0;
+    height: 57px;
+    letter-spacing: 0.25px;
+    line-height: 57px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    margin-top: 5px;
+    width: 125px;
 }
 
-footer img {
-    margin: 0 1%;
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.footer-list a {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: ;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 50px;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.footer-home{
+    width: 96px;
+}
+
+.footer-about{
+    width: 80px;
+}
+
+.footer-contact{
+    width: 95px;
+}
+
+.footer-faq{
+    width: 37px;
+}
+
+.footer-create{
+    height: 24px;
+    width: 132px;
+}
+
+.footer-barcode {
+    height: 49px;
+    width: 49px;
+    margin-left: 397px;
+    margin-bottom: 0PX;
+    margin-top: 30px;
+}
+
+.footer-qr {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    line-height: 24px;
+    height: 24px;
+    margin-left: 306px;
+    margin-top: 5px;
+    text-align: left;
+    width: 241px;
+}
+
+.footer-second hr {
+    margin-left: 210px;
+    margin-right: 8px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+.footer-copy {
+    font-family: Montserrat;
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    letter-spacing: 0.4000000059604645px;
+    margin-top: 5px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+.footer-have {
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 39px;
+    margin-bottom: 0px;
+    margin-left: 157px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-support {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 50;
+    height: 24px;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+    margin-left: 202px;
+    text-align: center;
+    width: 311px;
+}
+
+.footer-images {
+    margin-left: 185px;
+    margin-top: 50px;
+}
+
+.footer-facebook {
+    cursor: pointer;
+    height: 94px;
+    width: 94px;
+}
+
+.footer-twitter {
+    cursor: pointer;
+    height: 94px;
+    width: 94px;
+}
+
+.footer-linkedin {
+    cursor: pointer;
+    height: 94px;
+    width: 94px;
 }
