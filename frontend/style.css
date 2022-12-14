@@ -21,111 +21,12 @@
     color: var(--black);
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--black);
-}
-
-/* nav */
-
-.grid-col3_nav {
-    display: grid;
-    grid-template-columns: .4fr 1fr .4fr;
-    grid-auto-rows: 1fr;
-    grid-template-areas: ". . .";
-}
-
-.nav {
-    text-align: center;
-    color: var(--black);
-    margin-top: 25px;
-}
-
-nav {
-    padding-top: 15px;
-}
-
-nav > ul > li {
-    list-style: none;
-    display: inline-flex;
-}
-
-nav > ul > li >a {
-    margin-right: 12px;
-}
-
-.nav-btn_div {
-    padding-top: 18px;
-    font-size: 10px;
-}
-
-.nav-btn_div a {
-    border: 2px solid var(--main_color);
-    padding: 15px 25px;
-    border-radius: 8px;
-}
-
-#nav-btn1 {
-    margin-right: 20px;
-}
-
-#nav-btn1:hover {
-    border-color: var(--hover-color);
-}
-
-#nav-btn2 {
-    background-color: var(--main_color);
-    color: white;
-}
-
-#nav-btn2:hover {
-    background-color: var(--hover-color);
-}
-
-/* body */
-
-.grid-col2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: ". .";
-}
-
-.grid-col2 > div > .bold {
-    font-size: 45px;
-    margin-top: 20px;
-}
-
-.grid-1b {
-    padding: 80px;
-}
-.grid-1b p, .grid-1b h1 {
-    margin-top: 30px;
-}
-
-.body-btn {
-    margin-top: 10px !important;
-    font-size: 13px;
-}
-
-.large-paragraph {
-    font-size: 40px;
-}
-/* extras */
-
-.inline-flex {
-    display: inline-flex;
-}
-
-.bold {
-    font-weight: bolder;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.no-margin-top {
-    margin-top: none !important;
+    color: #fff;
 }
