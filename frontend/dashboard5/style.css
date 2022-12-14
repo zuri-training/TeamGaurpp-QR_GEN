@@ -26,9 +26,9 @@ body, html {
 
 /* hide scrollbar */
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 /* Dashboard 5 styling */
 
