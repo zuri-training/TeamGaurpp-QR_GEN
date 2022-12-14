@@ -1,107 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/frontend/style.css">
-    <link rel="stylesheet" href="/frontend/landing.css">
-    <link rel="stylesheet" href="dashboard1.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../landing.css" />
+    <link rel="stylesheet" href="dashboard1.css" />
+  </head>
+  <body>
     <header>
-        <div>
-            <img 
-                src="/frontend/assets/image/png/Home Page.png"
-                alt="home"
-                width = "45px"
-                height = "45px"
-            />
-            <h4>HOME</h4>
-        </div>
-        <div class="create-code">
-            <h4 id="user_email"></h4>
-        </div>
+      <div>
+        <img
+          src="/frontend/assets/image/png/Home Page.png"
+          alt="home"
+          width="45px"
+          height="45px"
+        />
+        <h4>HOME</h4>
+      </div>
+      <div class="create-code">
+        <h4 id="user_email"></h4>
+        <img src="./assets/svgs/profile.svg" alt="profile" />
+      </div>
     </header>
     <main>
-        <div class="sidebar">
-            <div class="sidebarNav">
-                <div>
-                    <img 
-                        src="/frontend/assets/image/svg/qr small.svg"
-                        alt="small qr code"
-                    />
-                    <p>My QR Codes</p>
-                </div>
-                <div>
-                    <img 
-                        src="/frontend/assets/image/svg/settings.svg"
-                        alt="settings"
-                    />
-                    <p>Settings</p>
-                </div>
-                <div>
-                    <img 
-                        src="/frontend/assets/image/svg/new folder.svg"
-                        alt="add button"
-                    />
-                    <p>Folders</p>
-                </div>
-                <div>
-                    <img 
-                        src="/frontend/assets/image/svg/folders.svg"
-                        alt="add button"
-                    />
-                    <p>New Folder</p>
-                </div>
-            </div>
-            <div class="logout">
-                <div>
-                    <p>Log Out</p>
-                </div>
-            </div>
-        </div>
-        <div class = "content">
-            <h1>MY QR CODES</h1>
-            <div id="form-div">
-                <form action="#" method="post">
-                    <input type="text" placeholder="Search QR Codes"/>
-                    <button>Submit</button>
-                </form>
-            </div>
+      <div class="sidebar">
+        <div class="sidebarNav">
+          <a href="#">
             <div>
-                <img  src="/frontend/assets/image/svg/qr large.svg" alt="big qr code"/>
-                <p>There are no QR codes to show</p>
+              <img
+                src="/frontend/assets/image/svg/qr small.svg"
+                alt="small qr code"
+              />
+              <p>My QR Codes</p>
             </div>
-            <button>
-                Create QR Code
-            </button>
+          </a>
+          <a>
+            <div>
+              <img
+                src="/frontend/assets/image/svg/new folder.svg"
+                alt="add button"
+              />
+              <p>Folders</p>
+            </div>
+          </a>
+          <a href="../learnMorePage/learnMore.html">
+            <div>
+              <p>Help</p>
+            </div>
+          </a>
         </div>
+        <div class="logout">
+          <div>
+            <p>Log Out</p>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div id="form-div">
+          <h1>MY QR CODES</h1>
+          <form id="search-codes">
+            <input type="text" placeholder="Search QR Codes" />
+            <button>Submit</button>
+          </form>
+        </div>
+        <div id="qrcodes_container">
+          <div>
+            <img
+              src="/frontend/assets/image/svg/qr large.svg"
+              alt="big qr code"
+            />
+            <p>There are no QR codes to show</p>
+          </div>
+        </div>
+        <button id="create_qrcode">Create QR Code</button>
+      </div>
     </main>
     <footer>
         <div class = "info-div">
             <p><a href="\">FAQs</a></p>
-            <p><a href="\">About US</a></p>
+            <p><a href="\">About Us</a></p>
             <p><a href="\">Help</a></p>
         </div>
         <div>
             <span>Contact Us</span>
             <img 
-                src="/frontend/assets/image/svg/twitterLogo.svg"
+                src="../assets/image/svg/twitterLogo.svg"
                 alt="twitter"
             />
             <img 
-                src="/frontend//assets/image/svg/facebook.svg"
+                src="..//assets/image/svg/facebook.svg"
                 alt="facebook"
             />
         </div>
         <div>
-            <img src="/frontend/assets/image/svg/copyright.svg" alt="copyright"/>
+            <img src="../assets/image/svg/copyright.svg" alt="copyright"/>
             <span>2022 Team Gaurpp</span>
         </div>
     </footer>
     <script src="dashboard1.js" type="text/javascript" async defer></script>
-</body>
+  </body>
 </html>
