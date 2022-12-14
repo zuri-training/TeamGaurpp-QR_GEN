@@ -17,17 +17,21 @@
             <img class="barcode" src="./img/image 5.png" alt="">
         </div>
         <div class="rightDiv">
-            <form>
+            <form  id="logIn">
                 <label class="emailLabel" for="Email">Email</label>
                     <input 
                         class="emailInput" 
                         type="email" 
+                        name = "email"
+                        id="email"
                         placeholder="Email"
                     >
                 <label class="passwordLabel" for="password">password</label>
                     <input 
                         class="passwordInput" 
                         type="password" 
+                        name = "password"
+                        id="password"
                         placeholder="Password"
                     >
 
@@ -35,7 +39,7 @@
                     Forgot password?
                     <a class="click" href="../password recovery/passwordrecovery.html">click here</a>
                 </p>
-                <button class="logIn">Log in</button>
+                <button type="submit" class="logIn">Log in</button>
             </form>
             <button class="googleButton"> <img class="googleImage" src="./img/google.png" alt=""> Log in with Google</button>
             <p class="dont">Don't have an account? <a href="../SignUp/signup.html"><button class="signUp">Sign up</button></a></p>
@@ -63,5 +67,6 @@
             <span>2022 Team Gaurpp</span>
         </div>
     </footer>
+    <script src = "login.js"></script>
 </body>
 </html>
