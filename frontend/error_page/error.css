@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1{
+    background: linear-gradient(180deg, #013255 8.2%, #D2D2D2 85.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Josefin Sans;
+    font-size: 280px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.container h2{
+    border-radius: 0px;
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: -0.5px;
+    height: 78px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.container p{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.home {
+    background: #013255;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-family: Josefin Sans;
+    font-size: 22px;
+    font-weight: 400;
+    height: 46px;
+    width: 230px;
+    line-height: 36px;
+    letter-spacing: 0.15000000596046448px;
+    text-align: center;
+}
