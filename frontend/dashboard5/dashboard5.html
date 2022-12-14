@@ -7,6 +7,7 @@
     <title>Dashboard 5</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/frontend/style.css">
+    <link rel="stylesheet" href="/frontend/landing.css">
 </head>
 <body>
     <main>
@@ -58,14 +59,8 @@
                 </div>
                 <div id="right_d5">
                     <div>
-                        <p></p>
+                        <p style="margin-left: 173px; font-weight: bolder !important;">Your QR CODE is Ready to be used</p>
                     </div>
-                    <a href="#" class="right_d5-bar margin-top create-qr_d5">
-                        <div class="inline-flex">
-                            <i class="fa-solid fa-plus"></i>
-                            <p>Create QR Code</p>
-                        </div>
-                    </a>
                     <div class="right_d5-bar margin-top bottom_d5 grid-col-2">
                         <div>
                             <img src="assets/image/svg/qr large.svg" alt="qr" id="qr-image">
@@ -83,26 +78,67 @@
                             <p id="qr-status" class="bold-txt_d5 bottom_d5-p">Active</p>
                         </div>
                     </div>
+                    <div>
+                        <a href="#" class="right_d5-bar margin-top create-qr_d5">
+                            <div class="inline-flex">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Create QR Code</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <section>
-            <div>
-                <div></div>
-                <div>
+            <div class="grid-col-2-bottom center-text">
+                <div class="center-text" style="margin-top: 25px;">
                     <form action="" method="">
                         <div class="right_d5-bar">
                             <img src="assets/image/svg/icons8-search.svg" alt="search" height="28">
                             <input type="text" name="" id="" placeholder="Search QR Codes" required>
                         </div>
-                        <button type="submit" id="submit_qr">Submit</button>
+                        <div class="submit_qr">
+                            <button type="submit" id="submit_qr">Submit</button>
+                        </div>
                     </form>
+                </div>
+                <div>
+                    <img class="margin-right" src="assets/image/svg/qr creation.svg" alt="created_at" height="150">
+                    <div>
+                        <a href="#" id="see-more">See more</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer-container">
+        <div class="footer-first">
+            <h2 class="footer-pages">Pages</h2>
+            <div class="footer-list">
+                <a href="" class="footer-home">Homepage</a>
+                <a href="" class="footer-about">About us</a>
+                <a href="" class="footer-contact">Contact us</a>
+                <a href="" class="footer-faq">FAQ</a>
+                <a href="" class="footer-create">Create Qr code</a>
+            </div>
+        </div>
+
+        <div class="footer-second">
+            <img src="./img/barcode.png" alt="" class="footer-barcode">
+            <h2 class="footer-qr">QR GEN TEAM GAURPP</h2>
+            <hr>
+            <p class="footer-copy">&copy All rigts reserved. QR GEN is a registered trademark of TEAMGAURPP</p>
+        </div>
         
+        <div class="footer-third">
+            <h2 class="footer-have">HAVE QUESTIONS?</h2>
+            <a href="" class="footer-support">Support@QR-Gen Team gaurpp.com</a><br>
+            <div class="footer-images">
+                <img class="footer-facebook" src="./img/facebook.png" alt="Image of ">
+                <img class="footer-twitter" src="./img/twitter.png" alt="Image of ">
+                <img class="footer-linkedin" src="./img/linkedin.png" alt="Image of ">
+            </div>
+        </div>
     </footer>
     <script src="script.js" type="text/javascript" async defer></script>
     <script src="https://kit.fontawesome.com/17f0db7e39.js" crossorigin="anonymous" async></script>
