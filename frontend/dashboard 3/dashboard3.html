@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../landing.css">
     <link rel="stylesheet" href="style/style.css">
 
     <title>Document</title>
@@ -12,78 +13,57 @@
 <body>
     <div class="container">
         <!-- top navigation bar -->
-        <nav class="topnav">
-            <div class="logo_container">
-                <div class="icon">
-                    <a href="#">
-                        <img src="image/HomePage.png" alt="homeicon" width="70%">
-                    </a>
-                </div>
-                <div class="home">
-                    <a href="#"> <h3>HOME</h3></a>
-                </div>
+        <header>
+            <div>
+              <img
+                src="../assets/image/svg/qr small.svg"
+                alt="home"
+                width="45px"
+                height="45px"
+                style="margin-right: 1%;"
+              />
+              <h4>HOME</h4>
             </div>
-
-            <div class="mail">
-                <div class="mail_site">
-                    <a href="#">teamgaurrpp@gmail.com</a>
-                </div>
-               
-                <div class="icon"><a href="#">
-                    <img src="image/Group 10.png" alt="mailicon">
-                </a></div>
-                <div class="downarrow"><a href="#">
-                    <img src="image/downarrow.png" alt="downicon">
-                </a></div>
+            <div class="create-code">
+              <h4 id="user_email"></h4>
+              <img src="../dashboard1/assets/svgs/profile.svg" alt="profile" />
             </div>
-        </nav>
+          </header>
             <!-- hero section starts here -->
         <div class="hero_section">
             <!-- first section in the hero section -->
             <section class="first_section">
-                <div class="arrow">
-                    <a href="#">
-                        <img src="image/backarrow.png" alt="back" width="50%">
+                <div class="arrow" >
+                    <a  id="previous">
+                        <img src="image/backarrow.png" alt="back" width="">
                     </a>
                 </div>
                 <div class="centernum">
                     <div class="div1">
+                        <a href="../dashboard 2/dashboard2.html">
                         <div class="page_number">
-                            <div class="number">
-                            <a href="./dashboard2.html"><p>1</p>
-                            </a>
+                            <div class="number" >
+                            <p>1</p>
                             </div>
                         </div>
+                        </a>
                         <div class="title">
                             <p>Select Type</p>
                         </div>
                     </div>
                     <div class="line"><img src="image/Line 1.png" alt="line" width="70%">
                     </div>
-                   <div class="div2">
-                       <div class="container">
-                            <div class="page_number">
-                                <div class="number">
-                                    <a href="./dashboard3.html"><p>2</p>
-                                    </a>
-                                </div>
-                            </div>
-                       </div>
+                  
+                    <div class="div2">
+                        <a href="../dashboard 3/dashboard3.html">
+                        <div class="page_number">
+                        <div class="number" id="active">
+                            <p>2</p>
+                        </div>
+                        </div>
+                         </a>
                         <div class="title">
                             <p>Additional Information</p>
-                        </div>
-                   </div>
-                    <div class="line"><img src="image/Line 1.png" alt="line" width="70%">
-                    </div>
-                    <div class="div3">
-                        <div class="page_number">
-                            <div class="number">
-                            <a href="#"><p>3</p>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <p>QR Design</p>
                         </div>
                    </div>
                 </div>
@@ -99,23 +79,57 @@
                             <h3>Website URL</h3>
                         </div>
                     </div>
+                    <form>
                     <div class="submission_box">
                         <div class="text_section">
                             <h3>Submit URL for your QR Code</h3>
                         </div>
                         <div class="input">
+                            <input type="text" name="title" placeholder="Untitled">
                             <input type="text" name="url" placeholder="https://kesanorbit.com">
                         </div>
                         <p>Your QR code will open this URL</p>
                     </div>
 
                     <div class="submit_button">
-                        <button> <a href="#"> Continue <img src="image/arrowright.png" alt="arrowright"></a></button>
+                        <button type="submit"> Continue <img src="image/arrowright.png" alt="arrowright"></button>
                     </div>
+                    </form>
                 </div>
             </section>
         </div>
     </div>
-    <script src="script.js" type="text/javascript" async defer></script>
+    <footer class="footer-container">
+        <div class="footer-first">
+            <h2 class="footer-pages">Pages</h2>
+            <div class="footer-list">
+                <a href="" class="footer-home">Homepage</a>
+                <a href="" class="footer-about">About us</a>
+                <a href="" class="footer-contact">Contact us</a>
+                <a href="" class="footer-faq">FAQ</a>
+                <a href="" class="footer-create">Create Qr code</a>
+            </div>
+        </div>
+
+        <div class="footer-second">
+            <img src="../assets/image/svg/barcode.svg" alt="" class="footer-barcode">
+            <h2 class="footer-qr">QR GEN TEAM GAURPP</h2>
+            <hr>
+            <p class="footer-copy">&copy All rigts reserved. QR GEN is a registered trademark of TEAMGAURPP</p>
+        </div>
+        
+        <div class="footer-third">
+            <div style="width: 100%; text-align:left; margin-left: auto;">
+                <h2 class="footer-have">HAVE QUESTIONS?</h2>
+                <a href="" class="footer-support" style="font-size: 14px;">Support@QR-Gen Team gaurpp.com</a>
+            </div>
+            <div class="footer-images">
+                <img class="footer-facebook" src="../assets/image/svg/🦆 icon _facebook fill_.svg" alt="Image of ">
+                <img class="footer-twitter" src="../assets/image/svg/🦆 icon _twitter circle_.svg" alt="Image of ">
+                <img class="footer-linkedin" src="../assets/image/svg/🦆 icon _linkedin_.svg" alt="Image of ">
+            </div>
+        </div>
+    </footer>
+    <script src="dashboard3.js" type="text/javascript" async defer></script>
 </body>
 </html>

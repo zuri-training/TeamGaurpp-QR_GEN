@@ -5,52 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,100;1,100;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../landing.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Dashboard 2</title>
 </head>
 <body>
-    <!-- top navigation bar -->
-    <nav class="topnav">
-        <div class="logo_container">
-            <div class="icon">
-                <a href="#">
-                    <img src="image/HomePage.png" alt="homeicon" width="70%">
-                </a>
-            </div>
-            <div class="home">
-                <a href="#"> <h3>HOME</h3></a>
-            </div>
+    <header>
+        <div>
+          <img
+            src="../assets/image/svg/qr small.svg"
+            alt="home"
+            width="45px"
+            height="45px"
+            style="margin-right: 1%;"
+          />
+          <h4>HOME</h4>
         </div>
-
-        <div class="mail">
-            <div class="mail_site">
-                <a href="#">teamgaurrpp@gmail.com</a>
-            </div>
-            
-            <div class="icon"><a href="#">
-                <img src="image/Group 10.png" alt="mailicon">
-            </a></div>
-            <div class="downarrow"><a href="#">
-                <img src="image/downarrow.png" alt="downicon">
-            </a></div>
+        <div class="create-code">
+          <h4 id="user_email"></h4>
+          <img src="../dashboard1/assets/svgs/profile.svg" alt="profile" />
         </div>
-    </nav>
+      </header>
     <div class="container">
         <section class="hero_section">
             <section class="first_section">
-                <div class="arrow">
-                    <a href="#">
+                <div class="arrow" >
+                    <a  id="previous">
                         <img src="image/backarrow.png" alt="back" width="">
                     </a>
                 </div>
                 <div class="centernum">
                     <div class="div1">
+                        <a href="../dashboard 2/dashboard2.html">
                         <div class="page_number">
-                            <div class="number">
-                            <a href="../dashboard 2/dashboard2.html"><p>1</p>
-                            </a>
+                            <div class="number" id="active">
+                            <p>1</p>
                             </div>
                         </div>
+                        </a>
                         <div class="title">
                             <p>Select Type</p>
                         </div>
@@ -59,25 +51,15 @@
                     </div>
                   
                     <div class="div2">
+                        <a href="../dashboard 3/dashboard3.html">
+                        <div class="page_number">
                         <div class="number">
-                            <a href="../dashboard 3/dashboard3.html"><p>2</p>
-                            </a>
+                            <p>2</p>
                         </div>
+                        </div>
+                         </a>
                         <div class="title">
                             <p>Additional Information</p>
-                        </div>
-                   </div>
-                    <div class="line"><img src="image/Line 1.png" alt="line" width="70%">
-                    </div>
-                    <div class="div3">
-                        <div class="page_number">
-                            <div class="number">
-                            <a href="#"><p>3</p>
-                            </a>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <p>QR Design</p>
                         </div>
                    </div>
                 </div>
@@ -85,132 +67,101 @@
         </section>
         <div class="card_container">
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
                         <div class="icon">
                             <img src="image/linkicon.png" alt="linkicon">
-                            
+                            <p>Website URL</p>
                         </div>
-                        <p>website URL</p>
-                    </div>
-                </div>
-                <div class="text_section">
                     <p>Link to any website</p>
-                </div>
             </div>
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
-                        <div class="icon">
-                            <img src="image/MP3.png" alt="linkicon">
-                            
-                        </div>
-                        <p>MP3</p>
-                    </div>
+                <div class="icon">
+                    <img src="image/MP3.png" alt="linkicon">
+                    <p>MP3</p>
                 </div>
-                <div class="text_section">
-                    <p>Share an audio file</p>
-                </div>
+                <p>Share an audio file</p>
             </div>
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
-                        <div class="icon">
-                            <img src="image/Wi-Fi.png" alt="linkicon">
-                            
-                        </div>
-                        <p>WiFi</p>
-                    </div>
+                <div class="icon">
+                    <img src="image/Wi-Fi.png" alt="linkicon">
+                    <p>WIFI</p>
                 </div>
-                <div class="text_section">
-                    <p>Connect to a WiFi network</p>
-                </div>
+                <p>Connect to a WIFI network</p>
             </div>
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
-                        <div class="icon">
-                            <img src="image/PDF.png" alt="linkicon">
-                            
-                        </div>
-                        <p>PDF</p>
-                    </div>
+                <div class="icon">
+                    <img src="image/PDF.png" alt="linkicon">
+                    <p>WIFI</p>
                 </div>
-                <div class="text_section">
-                    <p>Share a PDF document</p>
-                </div>
+                <p>Share a PDF document</p>
             </div>
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
                         <div class="icon">
                             <img src="image/linkicon.png" alt="linkicon">
-                            
+                            <p>Plain Text</p>
                         </div>
-                        <p>List of line</p>
-                    </div>
-                </div>
-                <div class="text_section">
-                    <p>Group of line</p>
-                </div>
+                    <p>Parse a plain text</p>
             </div>
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
                         <div class="icon">
                             <img src="image/Video Call.png" alt="linkicon">
-                            
+                            <p>Video</p>
                         </div>
-                        <p>Video</p>
-                    </div>
-                </div>
-                <div class="text_section">
                     <p>Share a video</p>
-                </div>
             </div>
             <div class="card">
-                <div class="image_section">
-                    <div class="icon_bg">
                         <div class="icon">
                             <img src="image/Google Images.png" alt="linkicon">
-                            
-                        </div>
-                        <p>Images</p>
-                    </div>
+                            <p>Images</p>
                 </div>
-                <div class="text_section">
                     <p>Share multiple Images</p>
-                </div>
             </div>
             <div class="card">
-            <div class="image_section">
-                <div class="icon_bg">
                     <div class="icon">
                         <img src="image/Magnetic Card.png" alt="linkicon">
-                        
+                        <p>Profile card</p>
                     </div>
-                    <p>Profile card</p>
-                </div>
-            </div>
-            <div class="text_section">
                 <p>Personal custom card</p>
             </div>
-            </div>
             <div class="card">
-            <div class="image_section">
-                <div class="icon_bg">
                     <div class="icon">
                         <img src="image/App Symbol.png" alt="linkicon">
-                        
+                        <p>APPS</p>
                     </div>
-                    <p>APPS</p>
-                </div>
-            </div>
-            <div class="text_section">
                 <p>Download apps android/IOS</p>
-            </div>
         </div>
            
     </div>
+    <footer class="footer-container">
+        <div class="footer-first">
+            <h2 class="footer-pages">Pages</h2>
+            <div class="footer-list">
+                <a href="" class="footer-home">Homepage</a>
+                <a href="" class="footer-about">About us</a>
+                <a href="" class="footer-contact">Contact us</a>
+                <a href="" class="footer-faq">FAQ</a>
+                <a href="" class="footer-create">Create Qr code</a>
+            </div>
+        </div>
+
+        <div class="footer-second">
+            <img src="../assets/image/svg/barcode.svg" alt="" class="footer-barcode">
+            <h2 class="footer-qr">QR GEN TEAM GAURPP</h2>
+            <hr>
+            <p class="footer-copy">&copy All rigts reserved. QR GEN is a registered trademark of TEAMGAURPP</p>
+        </div>
+        
+        <div class="footer-third">
+            <div style="width: 100%; text-align:left; margin-left: auto;">
+                <h2 class="footer-have">HAVE QUESTIONS?</h2>
+                <a href="" class="footer-support" style="font-size: 14px;">Support@QR-Gen Team gaurpp.com</a>
+            </div>
+            <div class="footer-images">
+                <img class="footer-facebook" src="../assets/image/svg/🦆 icon _facebook fill_.svg" alt="Image of ">
+                <img class="footer-twitter" src="../assets/image/svg/🦆 icon _twitter circle_.svg" alt="Image of ">
+                <img class="footer-linkedin" src="../assets/image/svg/🦆 icon _linkedin_.svg" alt="Image of ">
+            </div>
+        </div>
+    </footer>
+    <script src = "dashboard2.js" ></script>
 </body>
 </html>

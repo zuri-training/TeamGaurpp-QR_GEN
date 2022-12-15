@@ -45,29 +45,27 @@ a{
 }
 .hero_section{
     background-color: white;
-    margin-bottom: 5rem;
+    height: 13vh;
+    margin-bottom: 4rem;
 
 }
 .hero_section .first_section{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-    padding: 10px 45px;
+    padding: 0.5% 5%;
 }
 .hero_section .first_section .arrow{
     margin-top: 15px;
+    border: none;
 }
 .first_section .centernum{
     display: flex;
     margin: auto;
-
+    justify-content: space-between;
     text-align: center;
-   
+    width: 45%;
 }
-.first_section .div2{
-    display: block;
-    align-items: center;
-    padding-left :40px ;
-}
+
 .first_section .number{
     box-sizing: border-box;
     background-color: #d9d9d9;
@@ -75,8 +73,10 @@ a{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    margin-left: 50px;
-    
+}
+
+#active {
+    background: #D6E9FB;
 }
 .first_section .div2 .number,.first_section .div1 .number,.first_section .div3 .number{
     font-size: 20px;
@@ -99,7 +99,7 @@ a{
     
 }
 .first_section .centernum .line{
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .first_section .div1 .title, .first_section .div2 .title, .first_section .div3 .title{
     padding-top:1rem;
@@ -108,41 +108,51 @@ a{
 .first_section .line img{
     width: auto;
 }
+
+.div1 , .div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .container .card{
-    background-color: #d9d9d9;
-    width: 12rem;
-    height: 9rem;
+    background: #D6E9FB;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 13rem;
+    height: 10rem;
     margin: 1rem 2rem;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: grid;
+    grid-template-rows: 80% 20%;
 }
+
+.card p {
+    font-weight: 600;
+}
+
 .container .card_container{
     display: grid;
     grid-template-columns: auto auto auto ;
     justify-content: center;
     max-width: 100%;
 }
-.icon_bg{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
-    height: 6rem;
-    border-radius: 5px 0px;
-    padding-top: 15px;
-    margin-bottom: 1rem;
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.icon_bg .icon{
-    background-color:#D2D0D0;
-    width: 3rem;
-    margin: auto;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    border: 2.5px solid #013255
-    
+
+.icon p {
+    font-size: 14px;
+    font-weight: 400;
 }
-.icon_bg .icon img{
-    width: 50%;
-    margin: 5px 10px;
+
+.icon img{
+    width: 20%;
+    margin: 2% auto 4%;
 }
 
 /* responsivness and breakpoints */

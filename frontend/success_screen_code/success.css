@@ -23,27 +23,15 @@ body {
     margin-bottom: 70px;
 }
 
-.design {
+.next {
     background: #013255;    ;
     border: 0px;
     border-radius: 8px;
     color: white;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 20px;
     height: 50px;
-    margin-right: 30px;
+    margin-right: 2px;
     padding: 16px 24px 16px 24px;
-    width: 175px;
-}
-
-.download {
-    background: #013255;    ;
-    border: 0px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    font-size: 12px;
-    height: 50px;
-    padding: 16px 24px 16px 24px;
-    width: 269px;
+    width: 437px;
 }
