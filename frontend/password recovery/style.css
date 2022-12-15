@@ -49,6 +49,10 @@ body, html {
     margin: auto;
 }
 
+.header_d5 > h1 {
+    margin-top: .5rem;
+}
+
 #right-header_d5 {
     display: inline-flex;
     gap: 10px;
@@ -248,11 +252,10 @@ body, html {
     height: 430px;
     max-height: 430px;
     text-align: center;
-    padding: 15px;
 }
 
 .form_d5pw form {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
@@ -273,6 +276,7 @@ body, html {
     font-weight: 200 !important;
     font-size: 17px;
     outline: none;
+    border-radius: 8px;
 }
 
 .form_d5pw form input[type=submit], input[type=reset] {
@@ -286,12 +290,22 @@ body, html {
     cursor: pointer;
     border: none;
     outline: none;
+    border-radius: 8px;
 }
 
 .form_d5pw input[type=reset] {
     background: transparent;
     border: 1px solid var(--main_color);
     color: var(--main_color);
+    border-radius: 8px;
+}
+
+#recovery-img {
+    background: url("assets/image/svg/password\ recovery.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
 }
 
 /* extras */
@@ -382,12 +396,17 @@ body, html {
 
 .body-col-2_d5pw {
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: 1fr .6fr;
     grid-template-rows: 1fr;
     grid-template-areas: ". .";
+    border: 1px solid var(--main_color);
+    width: 50%;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 8px;
 }
 
 .form-text_d5pw {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
