@@ -104,3 +104,30 @@ button {
     padding: 1% 5%;
     color: #fff;
 }
+
+#create_qrcode {
+    width: 30%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+#qrcodes_container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.qrcode {
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #333;
+    border-radius: 15px;
+    margin: 0 auto;
+    background: #ccc;
+    cursor: pointer;
+}
