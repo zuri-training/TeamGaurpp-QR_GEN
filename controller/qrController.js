@@ -11,14 +11,14 @@ exports.generateCode = async (req, res) => {
 				message: "User not found",
 			});
 		}
-		const findQrCode = await Code.findOne({ text });
+		const findQrCode = await Code.findOne({ content });
 		if (findQrCode) {
 			return res.status(400).json({
 				message: "Code already exists",
 			});
 		}
-		const generateCode = await qrCode.toString(text, { type: "terminal" });
-		const imgCode = await qrCode.toDataURL(text);
+		const generateCode = await qrCode.toString(content, { type: "terminal" });
+		const imgCode = await qrCode.toDataURL(content);
 		const code = await Code.create({
 			userId: req.user.id,
 			title: title,
