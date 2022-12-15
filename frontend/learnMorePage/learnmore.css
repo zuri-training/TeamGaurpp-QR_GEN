@@ -14,20 +14,8 @@ header {
     cursor: pointer;
     height: 45px;
     margin-left: 83px;
-    margin-top: 6px;
-    width: 45px;
-}
-
-.home {
-    border: 0px;
-    cursor: pointer;
-    font-family: Montserrat;
-    font-size: 23px;
-    height: 30px;
-    margin-left: 8px;
-    margin-top: 12px;
-    padding: 0px;
-    width: 82px;
+    margin-top: 4px;
+    width: 35px;
 }
 
 .container {
@@ -40,10 +28,9 @@ header {
 }
 
 .leftList {
+    background: #D6E9FB;
     border: 1px solid #00000040;
-    border-left: 0px;
     border-radius: 5px;
-    border-top: 0px;
     box-shadow: 4px 4px 4px 0px #00000040;
     margin-top: 0px;
     width: 280px;
@@ -51,7 +38,6 @@ header {
 
 
 .lOne {
-    border-radius: nullpx;
     color: #141414;
     font-family: Montserrat;
     font-size: 20px;
@@ -69,7 +55,6 @@ header {
 }
 
 .lTwo{
-    border-radius: nullpx;
     color: #141414;
     font-family: Montserrat;
     font-size: 20px;
@@ -84,8 +69,14 @@ header {
     width: 220px;
 }
 
+.list-two-two{
+    font-size: 20px;
+    letter-spacing: 0em;
+    margin-left: -19px;
+    margin-top: -20px;
+}
+
 .lThree {
-    border-radius: nullpx;
     color: #141414;
     font-family: Montserrat;
     font-size: 20px;
@@ -106,9 +97,9 @@ header {
     font-weight: 500;
     line-height: 44.8px;
     height: 45px;
-    margin-bottom: 0px;
-    margin-left: 76px;
-    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-left: 46px;
+    margin-top: 25px;
     width: 234px;
 }
 
@@ -121,13 +112,23 @@ header {
     line-height: 28px;
     margin-bottom: 20px;
     margin-left: 62px;
-    margin-top: 80px;
+    margin-top: 130px;
     padding: 8px 42px 10px 42px;
     width: 168px;
 }
 
+.middle {
+    background: #00000040;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    height: 558px;
+    margin-left: 110px;
+    margin-top: 90px;
+    width: 10px;
+    display: flex;
+}
+
 .rightDiv {
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .qr {
@@ -135,8 +136,9 @@ header {
     font-weight: 500;
     line-height: 44.8px;
     height: 45px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     margin-left: 395px;
+    margin-top: 25px;
     text-align: center;
     width: 275px;
 }
@@ -147,72 +149,62 @@ header {
 }
 
 .square {
-    background: #E5E5E5;
-    border-radius: 30px;
+    background: #D6E9FB;
+    border-radius: 15px;
     border-top: 1px solid #B3B1B1;
-    height: 155px;
+    height: 195px;
+    margin-bottom: 20px;
+    margin-left: 79px;
+    width: 280px;
+}
+
+.square-two {
+    background: #D6E9FB;
+    border-radius: 15px;
+    border-top: 1px solid #B3B1B1;
+    height: 195px;
     margin-bottom: 20px;
     margin-left: 109px;
-    width: 250px;
+    width: 280px;
 }
 
-.squareTwo {
-    background: #E5E5E5;
-    border-radius: 30px;
-    border-top: 1px solid #B3B1B1;
-    height: 155px;
-    margin-bottom: 20px;
-    margin-left: 239px;
-    width: 250px;
+#square-left {
+    margin-top: 10px;
 }
 
-#squareLeft {
-    margin-top: 30px;
-}
-
-#squareRight {
-    margin-top: 30px;
-}
-
-.smallBox {
-    border: 1px solid #013255;
-    border-radius: 10px;
-    margin-left: 96px;
-    margin-top: 6px;
-    height: 38px;
-    width: 51px;
-    /* width: 50px; */
+#square-right {
+    margin-top: 10px;
 }
 
 #link {
-    height: 29px;
-    margin-left: 12px;
-    margin-top: 5px;
-    width: 29px;
+    height: 53px;
+    margin-left: 110px;
+    margin-top: 10px;
+    width: 50px;
 }
 
-#email {
-    height: 25px;
-    margin-left: 9px;
-    margin-top: 7px;
-    width: 34px;
+#wifi {
+    height: 62px;
+    margin-left: 100px;
+    margin-top: 0px;
+    width: 76px;
 }
 
-#call {
-    height: 25px;
-    margin-left: 12px;
-    margin-top: 7px;
-    width: 25px;
+#pdf {
+    height: 62px;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 72px;
 }
 
-#whatsapp {
-    height: 27px;
-    margin-left: 12px;
-    margin-top: 5px;
-    width: 27px;
+#apps {
+    height: 59px;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 69px;
 }
 
-.textLink {
+.text-link {
     border-radius: nullpx;
     color: #000000;
     font-family: Montserrat;
@@ -222,12 +214,10 @@ header {
     letter-spacing: 0em;
     line-height: 29.26px;
     margin: 0px;
-    margin-left: 103px;
     text-align: center;
-    width: 52px
 }
 
-.textEmail {
+.text-wifi {
     border-radius: nullpx;
     color: #000000;
     font-family: Montserrat;
@@ -238,11 +228,9 @@ header {
     text-align: center;
     height: 29px;
     margin: 0px;
-    margin-left: 86px;
-    width: 69px;
 }
 
-.textCall {
+.text-pdf {
     border-radius: nullpx;
     color: #000000;
     font-family: Montserrat;
@@ -252,12 +240,10 @@ header {
     line-height: 29.26px;
     margin: 0px;
     height: 29px;
-    margin-left: 103px;
     text-align: center;
-     width: 45px;
 }
 
-.textWhatsapp {
+.text-apps {
     border-radius: nullpx;
     color: #000000;
     font-family: Montserrat;
@@ -267,9 +253,7 @@ header {
     letter-spacing: 0em;
     line-height: 29.26px;
     margin: 0px;
-    margin-left: 61px;
     text-align: center;
-    width: 129px;
 }
 
 .longText1 {
@@ -281,10 +265,8 @@ header {
     line-height: 24px;
     height: 24px;
     margin-bottom: 3px;
-    margin-left: 10px;
     margin-top: 5px;
     text-align: center;
-    width: 240px;
 }
 
 .longText2 {
@@ -297,10 +279,8 @@ header {
     letter-spacing: 0em;
     line-height: 24px;
     margin-bottom: 3px;
-    margin-left: 56px;
     margin-top: 5px;
     text-align: center;
-    width: 144px;
 }
 
 .longText3 {
@@ -312,10 +292,8 @@ header {
     letter-spacing: 0em;
     line-height: 24px;
     margin-bottom: 3px;
-    margin-left: 67px;
     margin-top: 5px;
     text-align: center;
-    width: 111px;
 }
 
 .longText4 {
@@ -328,16 +306,8 @@ header {
     letter-spacing: 0em;
     line-height: 24px;
     margin-bottom: 3px;
-    margin-left: 0px;
     margin-top: 5px;
     text-align: center;
-    width: 270px;
-}
-
-hr {
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid #B3B1B1;
 }
 
 .choose {
@@ -346,7 +316,8 @@ hr {
     font-size: 18px;
     height: 38px;
     line-height: 28px;
-    margin-left: 84px;
+    margin-left: 94px;
+    margin-top: 10px;
     padding: 6px 30px 12px 19px;
     width: 100px;
 }
@@ -360,6 +331,7 @@ button {
 
 .buttons {
     display: flex;
+    margin-bottom: 100PX;
 }
 
 .back {
@@ -369,10 +341,9 @@ button {
     font-size: 20px;
     font-weight: 500;
     height: 45px;
-    /* line-height: 34.13px; */
     letter-spacing: 0em;
-    margin-left: 83px;
-    margin-top: 80px;
+    margin-left: 43px;
+    margin-top: 120px;
     padding: 12px 32px 16px 36px;
     width: 166px;
 }
@@ -389,8 +360,8 @@ button {
     font-weight: 500;
     height: 45px;
     letter-spacing: 0em;
-    margin-left: 846px;
-    margin-top: 80px;
+    margin-left: 580px;
+    margin-top: 45px;
     padding: 12px 32px 16px 36px;
     text-align: left;
     width: 166px;
