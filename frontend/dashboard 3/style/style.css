@@ -118,9 +118,9 @@ a {
 }
 
 /* second section container */
-/* .second_section{
-    height: 50vh;
-} */
+.second_section{
+    margin-bottom: 2rem;
+}
 .second_section .container{
     margin: 2rem 15rem;
     padding: 0 5rem;
