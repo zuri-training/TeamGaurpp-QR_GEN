@@ -7,9 +7,10 @@
 .container{
     font-family: Montserrat;
     font-size: 15px;
-    height: 120vh;
+    margin-bottom: 4rem;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
@@ -53,7 +54,7 @@ a{
 .hero_section .first_section{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
-    padding: 10px 45px;
+    padding: 6px 45px;
 }
 .hero_section .first_section .arrow{
     margin-top: 15px;
@@ -117,11 +118,11 @@ a{
 }
 
 /* second section container */
-.second_section{
+/* .second_section{
     height: 50vh;
-}
+} */
 .second_section .container{
-    margin: 5rem 15rem;
+    margin: 2rem 15rem;
     padding: 0 5rem;
 }
 .second_section .container .url{
@@ -152,7 +153,8 @@ a{
     width: 100%;
     border:1px solid #B4B4B4;
     border-radius: 4px;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 1rem;
 }
 .second_section .submission_box p{
     padding-top: 1rem;
@@ -166,7 +168,9 @@ a{
     color: white;
     font-family: Montserrat;
     width: 100%;
-    padding: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
     border: 1px solid #013255;
     border-radius: 8px;
 }
