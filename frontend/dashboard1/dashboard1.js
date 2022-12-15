@@ -4,6 +4,7 @@ const token = localStorage.getItem("token");
 const qrCodesContainer = document.querySelector("#qrcodes_container");
 
 
+
 window.onload = () => {
     let qrCodes  = ""
     userEmail.innerHTML = user.email;
@@ -19,7 +20,7 @@ window.onload = () => {
         if(data.allQrCodes.length > 0) {
             for (let qrCode of data.allQrCodes) {
                 qrCodes += `
-                <div class="qrcode">
+                <div class="qrcode" id=${qrCode._id}>
                     <img src=${qrCode.qrCode} alt="qr code" width = "150px" />
                     <p>${qrCode.title ? qrCode.title : "Untitled"}</p>
                     <p>${Date((qrCode.createdAt)).slice(0,15)}</p>
@@ -31,5 +32,14 @@ window.onload = () => {
 
     })
       .catch((error) => console.log(error));
+
+  const qrCodesDivs = document.querySelectorAll('.qrcode');
+
+  qrCodesDivs.forEach((qrCodeDiv) => {
+    qrCodeDiv.addEventListener('click', () => {
+        const qrCodeId = qrCodeDiv.getAttribute("id");
+        console.log(qrCodeId)
+    })
+  })
 }
 

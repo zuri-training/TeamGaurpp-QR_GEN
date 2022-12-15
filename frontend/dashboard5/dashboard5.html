@@ -5,94 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard 5</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../landing.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/frontend/style.css">
-    <link rel="stylesheet" href="/frontend/landing.css">
+
 </head>
 <body>
-    <main>
-        <section class="header_d5">
-            <div id="home-header_d5" class="grid_d5">
-                <img src="assets/image/png/Home Page.png" alt="home" height="35">
-                <p>home</p>
+    <header>
+        <div>
+          <img
+            src="/frontend/assets/image/png/Home Page.png"
+            alt="home"
+            width="45px"
+            height="45px"
+          />
+          <a href="../dashboard1/dashboard1.html"><h4>HOME</h4></a>
+        </div>
+        <div class="create-code">
+          <h4 id="user_email"></h4>
+          <img src="./assets/image/png/Group 10.png" alt="profile" />
+        </div>
+      </header>
+      <main>
+        <div class="sidebar">
+          <div class="sidebarNav">
+            <a href="#">
+              <div>
+                <img
+                  src="/frontend/assets/image/svg/qr small.svg"
+                  alt="small qr code"
+                />
+                <a href="../dashboard1/dashboard1.html"><p>My QR Codes</p></a>
+              </div>
+            </a>
+            <a>
+              <div>
+                <img
+                  src="/frontend/assets/image/svg/new folder.svg"
+                  alt="add button"
+                />
+                <p>Folders</p>
+              </div>
+            </a>
+            <a href="../learnMorePage/learnMore.html">
+              <div>
+                <a href="../learnMorePage/learnMore.html"><p>Help</p></a>
+              </div>
+            </a>
+          </div>
+          <div class="logout">
+            <div>
+              <p>Log Out</p>
             </div>
-            <div id="middle-header_d5" class="grid_d5"></div>
-            <div id="right-header_d5" class="grid_d5">
-                <p>teamgaurpp@gmail.com</p>
-                <img src="assets/image/png/Group 10.png" alt="user" height="25">
-                <i class="fa-solid fa-chevron-down"></i>
-            </div>
-        </section>
-        <section>
-            <div class="grid_d5-body">
-                <div id="left_d5">
-                    <div id="left_navd5">
-                        <div class="left_navd5-section">
-                            <div class="grid-row-4_d5">
-                                <div class="iniine-flex">
-                                    <a href="#" class="margin-left"><img src="assets/image/svg/qr small.svg" alt="qr">My QR codes</a>
-                                </div>
-                                <div class="iniine-flex">
-                                    <a href="#" class="margin-left"><img src="assets/image/svg/settings.svg" alt="settings">Settings</a>
-                                </div>
-                                <div class="iniine-flex">
-                                    <a href="#" class="margin-left"><img src="assets/image/svg/folders.svg" alt="folders">Folders</a>
-                                </div>
-                                <div class="iniine-flex">
-                                    <a href="#" class="margin-left"><img src="assets/image/svg/new folder.svg" alt="new folder">New Folder</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="left_navd5-section padding-top">
-                            <div class="center-text">
-                                <a href="#"><b>Help</b></a><br><br>
-                                <a href="#">Contact Us</a><br><br>
-                                <a href="#">FAQ</a><br><br>
-                            </div>
-                        </div>
-                        <div class="left_navd5-section">
-                            <div class="center-text">
-                                <a href="#" class="margin-top-logout absolute logout_d5">LogOut</a>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="content">
+                <div>
+                    <h3>Your QR CODE is Ready to be used</h3>
                 </div>
-                <div id="right_d5">
+                <div id="qr_section">
                     <div>
-                        <p style="margin-left: 173px; font-weight: bolder !important;">Your QR CODE is Ready to be used</p>
-                    </div>
-                    <div class="right_d5-bar margin-top bottom_d5 grid-col-2">
-                        <div>
-                            <img src="assets/image/svg/qr large.svg" alt="qr" id="qr-image">
-                            <p id="qr-link" class="qr-link">https://ikesanotbit.com</p>
-                            <a href="#" class="btn_d5">Download</a>
-                            <a href="#" class="btn_d5 btn_d5-2">Export Information</a>
-                        </div>
-                        <div>
-                            <p id="qr-name" class="bold-txt_d5 bottom_d5-p">Untitled</p>
-                            <p id="qr-type" class="bold-txt_d5 bottom_d5-p">Website URL</p>
-                            <p class="bold-txt_d5 bottom_d5-p">Updated <span id="qr-timestamp">3rd Dec. 2022</span></p>
-                            <p class="bold-txt_d5 bottom_d5-p"><span id="qr-scans">0</span> Scans</p>
-                            <p class="bold-txt_d5 bottom_d5-p"><a href="#">Edit Content</a><br></p>
-                            <p class="bold-txt_d5 bottom_d5-p"><a href="#">Edit Colour & Shape</a></p>
-                            <p id="qr-status" class="bold-txt_d5 bottom_d5-p">Active</p>
-                        </div>
+                        <img src="assets/image/svg/qr large.svg" alt="qr" id="qr-image">
+                        <p id="qr-link" class="qr-link">https://ikesanotbit.com</p>
+                        <button>Download</button>
+                        <button>Export Information</button>
                     </div>
                     <div>
-                        <a href="#" class="right_d5-bar margin-top create-qr_d5">
-                            <div class="inline-flex">
-                                <i class="fa-solid fa-plus"></i>
-                                <p>Create QR Code</p>
-                            </div>
-                        </a>
+                        <p id="qr-name" class="bold-txt_d5 bottom_d5-p">Untitled</p>
+                        <p id="qr-type" class="bold-txt_d5 bottom_d5-p">Website URL</p>
+                        <p class="bold-txt_d5 bottom_d5-p">Updated <span id="qr-timestamp">3rd Dec. 2022</span></p>
+                        <p class="bold-txt_d5 bottom_d5-p"><span id="qr-scans">0</span> Scans</p>
+                        <p class="bold-txt_d5 bottom_d5-p"><a href="#">Edit Content</a><br></p>
+                        <p class="bold-txt_d5 bottom_d5-p"><a href="#">Edit Colour & Shape</a></p>
+                        <p id="qr-status" class="bold-txt_d5 bottom_d5-p">Active</p>
                     </div>
                 </div>
+                <div>
+                    <a href="#" class="create-qr">
+                        <div class="inline-flex">
+                            <i class="fa-solid fa-plus"></i>
+                            <p>Create QR Code</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </section>
-        <section>
+      </main>
+        <section id="mid-section">
             <div class="grid-col-2-bottom center-text">
                 <div class="center-text" style="margin-top: 25px;">
-                    <form action="" method="">
+                    <form>
                         <div class="right_d5-bar">
                             <img src="assets/image/svg/icons8-search.svg" alt="search" height="28">
                             <input type="text" name="" id="" placeholder="Search QR Codes" required>
@@ -103,43 +104,35 @@
                     </form>
                 </div>
                 <div>
-                    <img class="margin-right" src="assets/image/svg/qr creation.svg" alt="created_at" height="150">
+                    <img class="margin-left" src="assets/image/svg/qr creation.svg" alt="created_at" height="150">
                     <div>
-                        <a href="#" id="see-more">See more</a>
+                        <a href="../dashboard1/dashboard1.html" id="see-more">See more</a>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer-container">
-        <div class="footer-first">
-            <h2 class="footer-pages">Pages</h2>
-            <div class="footer-list">
-                <a href="" class="footer-home">Homepage</a>
-                <a href="" class="footer-about">About us</a>
-                <a href="" class="footer-contact">Contact us</a>
-                <a href="" class="footer-faq">FAQ</a>
-                <a href="" class="footer-create">Create Qr code</a>
+        <footer>
+            <div class = "info-div">
+                <p><a href="\">FAQs</a></p>
+                <p><a href="\">About Us</a></p>
+                <p><a href="\">Help</a></p>
             </div>
-        </div>
-
-        <div class="footer-second">
-            <img src="./img/barcode.png" alt="" class="footer-barcode">
-            <h2 class="footer-qr">QR GEN TEAM GAURPP</h2>
-            <hr>
-            <p class="footer-copy">&copy All rigts reserved. QR GEN is a registered trademark of TEAMGAURPP</p>
-        </div>
-        
-        <div class="footer-third">
-            <h2 class="footer-have">HAVE QUESTIONS?</h2>
-            <a href="" class="footer-support">Support@QR-Gen Team gaurpp.com</a><br>
-            <div class="footer-images">
-                <img class="footer-facebook" src="./img/facebook.png" alt="Image of ">
-                <img class="footer-twitter" src="./img/twitter.png" alt="Image of ">
-                <img class="footer-linkedin" src="./img/linkedin.png" alt="Image of ">
+            <div>
+                <span>Contact Us</span>
+                <img 
+                    src="../assets/image/svg/twitterLogo.svg"
+                    alt="twitter"
+                />
+                <img 
+                    src="..//assets/image/svg/facebook.svg"
+                    alt="facebook"
+                />
             </div>
-        </div>
-    </footer>
+            <div>
+                <img src="../assets/image/svg/copyright.svg" alt="copyright"/>
+                <span>2022 Team Gaurpp</span>
+            </div>
+        </footer>
     <script src="script.js" type="text/javascript" async defer></script>
     <script src="https://kit.fontawesome.com/17f0db7e39.js" crossorigin="anonymous" async></script>
 </body>

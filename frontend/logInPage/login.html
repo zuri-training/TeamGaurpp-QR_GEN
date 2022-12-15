@@ -20,30 +20,33 @@
                 <img class="barcode" src="./img/image 5.png" alt="">
             </div>
             <div class="rightDiv">
-                <form>
+                <form id="logIn">
                     <label class="emailLabel" for="Email">Email</label>
                         <input 
                             class="emailInput" 
                             type="email" 
                             placeholder="Email"
-                        >
+                            id="email"
+                        />
                     <label class="passwordLabel" for="password">password</label>
                         <input 
                             class="passwordInput" 
                             type="password" 
                             placeholder="Password"
-                        >
+                            id="password"
+                        />
 
-                    <button class="logIn">Log in</button>
+                    <button class="logIn" type="submit">Log in</button>
                     <p class="forgot">
                         Forgot password?
-                        <a class="click" href="/frontend/password recovery/password recovery.html">click here</a>
+                        <a class="click" href="../password recovery/password recovery.html">click here</a>
                     </p>
                 </form>
                 <button class="googleButton"> <img class="googleImage" src="./img/google.png" alt=""> Log in with Google</button>
-                <p class="dont">Don't have an account? <a href="/frontend/SignUp/signup.html"><button class="signUp">Sign up</button></a></p>
+                <p class="dont">Don't have an account? <a href="../SignUp/signup.html"><button class="signUp">Sign up</button></a></p>
             </div>
         </div>
     </main>
+    <script src = "./login.js"></script>
 </body>
 </html>

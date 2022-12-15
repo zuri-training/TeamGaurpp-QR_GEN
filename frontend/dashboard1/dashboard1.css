@@ -26,6 +26,10 @@ main {
     margin-right: 5%;
 }
 
+.sidebar p {
+    color: #fff;
+}
+
 .sidebar > div {
     display: flex;
     flex-direction: column;
