@@ -70,14 +70,16 @@ exports.forgotPassword = async (req, res) => {
 		if (!findUser) {
 			return res.status(404).json({ message: "Invalid Email Address" });
 		}
+		const otp = `${Math.floor(100000 + Math.random() * 900000)}`;
 		sendEmail(
 			findUser.email,
 			"Reset Password",
-			`<p><a href="https://www.linkedin.com/" target="_blank">click here</a> to reset your password</p>`
+			`<h1>Enter the otp below to reset your password</h1>
+			 <h2>${otp}</h2>`
 		);
 		return res
 			.status(200)
-			.json({ message: "Reset password link sent to mail" });
+			.json({ message: "Reset password link sent to mail", otp });
 	} catch (err) {
 		console.log(err);
 		return res
