@@ -32,7 +32,7 @@ exports.generateCode = async (req, res) => {
 		console.log(err);
 		return res
 			.status(500)
-			.json({ message: err.message});
+			.json({ message: "An error occurred, please contact Admin" });
 	}
 };
 
