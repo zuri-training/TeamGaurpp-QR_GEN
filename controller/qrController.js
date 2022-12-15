@@ -4,24 +4,25 @@ const User = require("../models/User.js");
 
 exports.generateCode = async (req, res) => {
 	try {
-		const { text } = req.body;
+		const { title, content } = req.body;
 		const user = await User.findById(req.user.id);
 		if (!user) {
 			return res.status(404).json({
 				message: "User not found",
 			});
 		}
-		const findQrCode = await Code.findOne({ text });
+		const findQrCode = await Code.findOne({ content });
 		if (findQrCode) {
 			return res.status(400).json({
 				message: "Code already exists",
 			});
 		}
-		const generateCode = await qrCode.toString(text, { type: "terminal" });
-		const imgCode = await qrCode.toDataURL(text);
+		const generateCode = await qrCode.toString(content, { type: "terminal" });
+		const imgCode = await qrCode.toDataURL(content);
 		const code = await Code.create({
 			userId: req.user.id,
-			text: text,
+			title: title,
+			content: content,
 			qrCode: imgCode,
 		});
 
