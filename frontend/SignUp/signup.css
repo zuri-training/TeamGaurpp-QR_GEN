@@ -16,7 +16,7 @@ body {
 header {
 	background-color: #013255;
     height: 7vh;
-	margin-bottom: 100px;
+	margin-bottom: 60px;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h1 {
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 	gap: 30px;
-	height: 65vh;
+	height: 75vh;
 	width: 55%;
 	margin: auto;
 }

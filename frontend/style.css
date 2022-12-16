@@ -36,6 +36,11 @@ li a {
 	color: var(--black);
 }
 
+.large-qr {
+    text-align: right;
+    padding-right: 5%;
+}
+
 /* nav */
 
 .grid-col3_nav {
@@ -111,7 +116,7 @@ nav > ul > li > a {
 }
 
 .grid-1b {
-	padding: 80px;
+	padding: 55px;
 }
 .grid-1b p,
 .grid-1b h1 {
@@ -158,6 +163,10 @@ nav > ul > li > a {
     margin: auto;
 }
 
+.mobile {
+    display: none;
+}
+
 /* media queries */
 
 @media (max-width: 1010px) {
@@ -166,5 +175,9 @@ nav > ul > li > a {
     }
     .hide-mobile {
         display: none;
+    }
+
+    .mobile {
+        display: block;
     }
 }

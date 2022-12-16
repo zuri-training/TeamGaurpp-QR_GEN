@@ -9,6 +9,10 @@
     margin-left: 2%;
 }
 
+#home {
+    font-weight: 600;
+}
+
 main {
     width: 100%;
     display: grid;

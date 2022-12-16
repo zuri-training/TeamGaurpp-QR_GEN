@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <div class="mobile" style="height: 30vh; margin: auto; width: 75%; display: flex; flex-direction:column; align-items: center; justify-content: space-evenly;">
+        <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo">
+        <p class="bold">QR GEN TEAM GAURPP</p>
+        <h4 style="color:#013255;">This website is not available for tablet and mobile devices</h4>
+    </div>
+    <section class="hide-mobile">
         <section class="grid-col3_nav nav">
             <div>
                 <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo">
@@ -26,7 +31,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="nav-btn_div bold">
+            <div class="nav-btn_div bold" id="nav-btn">
                 <a href="./logInPage/login.html" id="nav-btn1">SIGN IN</a>
                 <a href="./SignUp/signup.html" id="nav-btn2">REGISTER</a>
             </div>
@@ -38,22 +43,27 @@
                     <p>Qr gen is a platform you can get your qr-code generation <br>
                         done in a secure, easy and fast method. Customize each QR- <br> code just to fit you personal need.</p>
                     <div class="nav-btn_div bold">
-                        <a href="./SignUp/signup.html" id="nav-btn2" class="body-btn">GENERATE QR CODE</a>
+                        <a id="nav-btn2" class="body-btn">GENERATE QR CODE</a>
                     </div>
                 </div>
-                <div></div>
+                <div class="large-qr">
+                    <img 
+                        src="./assets/image/svg/qr extra large.svg"
+                        alt="large qr code"
+                    />
+                </div>
             </div>
         </section>
         <section class="hide-mobile">
             <div class="grid-col2 align-left grid-1b">
                 <div>
-                    <p class="no-margin-top large-paragraph">What you should <br> know about QR-CODE <br> and our services.</p>
-                    <div class="nav-btn_div bold">
-                        <a href="#" id="nav-btn2" class="body-btn">LEARN MORE</a>
-                    </div>
+                    <img src="./assets/image/svg/undraw_teaching_re_g7e3 1.svg" alt="body-img">
                 </div>
                 <div>
-                    <img src="./assets/image/svg/undraw_teaching_re_g7e3 1.svg" alt="body-img">
+                    <p class="no-margin-top large-paragraph">What you should <br> know about QR-CODE <br> and our services.</p>
+                    <div class="nav-btn_div bold">
+                        <a href="./learnMorePage/learnMore.html" id="nav-btn2" class="body-btn">LEARN MORE</a>
+                    </div>
                 </div>
             </div>
         </section>

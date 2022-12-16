@@ -36,6 +36,10 @@ header {
     width: 280px;
 }
 
+.leftList li {
+    margin-bottom: 2rem;
+}
+
 
 .lOne {
     color: #141414;
@@ -110,11 +114,9 @@ header {
     font-weight: 500;
     height: 42px;
     line-height: 28px;
-    margin-bottom: 20px;
-    margin-left: 62px;
-    margin-top: 130px;
+    margin:130px 10% 20px;
     padding: 8px 42px 10px 42px;
-    width: 168px;
+    width: 80%;
 }
 
 .middle {
@@ -361,7 +363,7 @@ button {
     height: 45px;
     letter-spacing: 0em;
     margin-left: 580px;
-    margin-top: 45px;
+    margin-top: 100px;
     padding: 12px 32px 16px 36px;
     text-align: left;
     width: 166px;
@@ -404,7 +406,6 @@ button {
 .footer-list a {
     font-family: Montserrat;
     font-size: 16px;
-    line-height: ;
     font-weight: 700;
     letter-spacing: 0.5px;
     height: 24px;
