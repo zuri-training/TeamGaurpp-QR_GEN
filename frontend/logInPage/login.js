@@ -2,7 +2,7 @@ const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 const submitForm = document.querySelector("#logIn");
 
-const url = "http://qr-gen.eu-4.evennode.com/api/users/login";
+const url = "https://qr-gen-api.vercel.app/api/users/login";
 
 submitForm.addEventListener("submit", (event) => {
   event.preventDefault();

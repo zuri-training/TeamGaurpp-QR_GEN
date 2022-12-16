@@ -63,9 +63,10 @@ footer img {
 } */
 
 a {
-    margin-right: 12%;
+    margin-right: 8%;
     padding: 1%;
     margin-left: 1%;
+    color: white;
 }
 
 a :hover {
@@ -125,11 +126,12 @@ h1 {
     margin-left: 17%;
 }
 
-.footer-container {
+footer {
+    margin-top: 2rem;
     background: #013255;
     color: white;
     display: flex;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     justify-content: space-around;
 }
 

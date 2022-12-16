@@ -20,13 +20,17 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
 }
 
-footer {
-    margin-top: 2rem;
+.nav-btn_div a, li a  {
+    color: var(--black)
 }
 
 /* nav */

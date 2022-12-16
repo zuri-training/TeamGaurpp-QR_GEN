@@ -4,7 +4,7 @@ const passwordInput = document.getElementById("password");
 const passwordConfirmInput = document.getElementById("cpwd");
 const submitForm = document.querySelector("#sign-up-form");
 
-const url = "http://qr-gen.eu-4.evennode.com/api/users/register";
+const url = "https://qr-gen-api.vercel.app/api/users/register";
 
 submitForm.addEventListener("submit", (e) => {
   e.preventDefault();

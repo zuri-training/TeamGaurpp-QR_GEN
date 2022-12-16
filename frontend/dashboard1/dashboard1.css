@@ -21,15 +21,7 @@ main {
     display: grid;
     height: 80vh;
     grid-template-rows: 50% 50%;
-    padding: 10%;
-}
-
-.sidebar a {
-    margin-right: 5%;
-}
-
-.sidebar p {
-    color: #fff;
+    padding: 9%;
 }
 
 .sidebar > div {
