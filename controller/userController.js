@@ -30,7 +30,7 @@ exports.registerUser = async (req, res) => {
 		console.log(err);
 		return res
 			.status(500)
-			.json({ message: "An Error Occurred, Please contact Admin" });
+			.json({ message: err.message});
 	}
 };
 
