@@ -6,7 +6,7 @@ const titleInput = document.getElementById("title");
 const contentInput = document.getElementById("content");
 const submitForm = document.querySelector("#qr-form");
 
-const url = "http://qr-gen.eu-4.evennode.com/api/qr_gen/"
+const url = "https://qr-gen-api.vercel.app/api/qr_gen"
 
 
 window.onload = () => {

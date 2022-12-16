@@ -5,7 +5,7 @@ const createdTime = document.getElementById("qr-timestamp")
 const userEmail = document.getElementById("user_email");
 const token = localStorage.getItem("token");
 const user = JSON.parse(localStorage.getItem("user"));
-const url = "http://qr-gen.eu-4.evennode.com/api/qr_gen/"
+const url = "https://qr-gen-api.vercel.app/api/qr_gen/"
 
 
 
@@ -19,7 +19,7 @@ window.onload = () => {
     .then(response => response.json())
     .then(data => {
         qrCodeContainer.innerHTML = `
-            <img src=${data.findQrCode.qrCode} alt="qr" id="qr-image">
+            <img src=${data.findQrCode.qrCode} alt="qr" id="qr-image" />
         `
         qrName.innerHTML = data.findQrCode.title;
         createdTime.innerHTML = Date(data.findQrCode.createdAt).slice(0, 15);

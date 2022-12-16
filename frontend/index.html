@@ -5,20 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="landing.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
-        <div>
-            <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo" height="30">
-            <p>QR GEN TEAM GAURPP</p>
-        </div>
-        <div>
-            <a href="/frontend/SignUp/signup.html"><h4>SIGN UP</h4></a>
-            <a href="/frontend/logInPage/login.html"><h4>LOG IN</h4></a>
-        </div>
-    </header>
-    <main>
         <section class="grid-col3_nav nav">
             <div>
                 <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo">
@@ -36,8 +27,8 @@
                 </nav>
             </div>
             <div class="nav-btn_div bold">
-                <a href="#" id="nav-btn1">SIGN IN</a>
-                <a href="#" id="nav-btn2">REGISTER</a>
+                <a href="./logInPage/login.html" id="nav-btn1">SIGN IN</a>
+                <a href="./SignUp/signup.html" id="nav-btn2">REGISTER</a>
             </div>
         </section>
         <section>
@@ -80,15 +71,35 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class = "info-div">
-            <p><a href="\">FAQs</a></p>
-            <p><a href="\">About Us</a></p>
-            <p><a href="\">Help</a></p>
+    <footer class="footer-container">
+        <div class="footer-first">
+            <h2 class="footer-pages">Pages</h2>
+            <div class="footer-list">
+                <a href="" class="footer-home">Homepage</a>
+                <a href="" class="footer-about">About us</a>
+                <a href="" class="footer-contact">Contact us</a>
+                <a href="" class="footer-faq">FAQ</a>
+                <a href="" class="footer-create">Create Qr code</a>
+            </div>
         </div>
-        <div>
-            <img src="/frontend/assets/image/svg/copyright.svg" alt="copyright"/>
-            <span>2022 Team Gaurpp</span>
+  
+        <div class="footer-second">
+            <img src="../assets/image/svg/barcode.svg" alt="" class="footer-barcode">
+            <h2 class="footer-qr">QR GEN TEAM GAURPP</h2>
+            <hr>
+            <p class="footer-copy">&copy All rigts reserved. QR GEN is a registered trademark of TEAMGAURPP</p>
+        </div>
+        
+        <div class="footer-third">
+            <div style="width: 100%; text-align:left; margin-left: auto;">
+                <h2 class="footer-have">HAVE QUESTIONS?</h2>
+                <a href="" class="footer-support" style="font-size: 14px;">Support@QR-Gen Team gaurpp.com</a>
+            </div>
+            <div class="footer-images">
+                <img class="footer-facebook" src="../assets/image/svg/🦆 icon _facebook fill_.svg" alt="Image of ">
+                <img class="footer-twitter" src="../assets/image/svg/🦆 icon _twitter circle_.svg" alt="Image of ">
+                <img class="footer-linkedin" src="../assets/image/svg/🦆 icon _linkedin_.svg" alt="Image of ">
+            </div>
         </div>
     </footer>
     <script src="script.js" type="text/javascript" async defer></script>

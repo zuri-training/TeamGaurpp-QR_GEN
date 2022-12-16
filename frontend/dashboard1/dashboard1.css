@@ -21,7 +21,7 @@ main {
     display: grid;
     height: 80vh;
     grid-template-rows: 50% 50%;
-    padding: 10%;
+    padding: 9%;
 }
 
 .sidebar > div {

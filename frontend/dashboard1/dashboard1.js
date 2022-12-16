@@ -2,11 +2,16 @@ const userEmail = document.getElementById("user_email");
 const user = JSON.parse(localStorage.getItem("user"));
 const token = localStorage.getItem("token");
 const qrCodesContainer = document.querySelector("#qrcodes_container");
+const createQr = document.querySelector("#create_qrcode")
+
+createQr.addEventListener("click", () => {
+  window.location.href = "../dashboard 2/dashboard2.html"
+})
 
 window.onload = () => {
   let qrCodes = "";
   userEmail.innerHTML = user.email;
-  const url = "http://qr-gen.eu-4.evennode.com/api/qr_gen/";
+  const url = "https://qr-gen-api.vercel.app/api/qr_gen";
 
   fetch(url, {
     method: "GET",
