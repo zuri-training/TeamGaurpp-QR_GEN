@@ -24,14 +24,6 @@ main {
     padding: 10%;
 }
 
-.sidebar a {
-    margin-right: 5%;
-}
-
-.sidebar p {
-    color: #fff;
-}
-
 .sidebar > div {
     display: flex;
     flex-direction: column;
