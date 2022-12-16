@@ -1,121 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;500;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: url("../assets/image/png/claudio-schwarz-VaeGMpaSlck-unsplash\ 2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 header {
-    background-color: #013255;
-    padding: 20px;
-    margin: auto;
+	background-color: #013255;
+    height: 7vh;
+	margin-bottom: 100px;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 150%;
+	margin-left: 1rem;
+	letter-spacing: 0.25px;
+    padding-top: 10px;
+	color: #ffffff;
+}
+
+.big-container {
+	background: #97b3cb;
+	border-radius: 25px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 30px;
+	height: 65vh;
+	width: 55%;
+	margin: auto;
 }
 
 .label {
-    padding-top: 30px;
-    color: #013255;
-    font-size: 18px;
-    font-weight:500;
-    line-height: 24.38px;
-    padding-left: 500px;
-    margin: 19.5px 20px;
-
+	padding-top: 30px;
+	color: #013255;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24.38px;
+	padding-left: 100px;
+	/* margin: 19.5px 20px; */
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    padding: 8px;
-    width: 45%;
-    display: block;
-    border-radius: 8px;
-    border: none;
-    border: 1px solid #013255;
-    outline: none;
-    color: #013255;
-    margin-bottom: 15px;
+	padding: 8px;
+	width: 70%;
+	display: block;
+	border-radius: 8px;
+	border: none;
+	border: 1px solid #013255;
+	outline: none;
+	color: #013255;
+	margin-bottom: 15px;
+	background: #97b3cb;
 }
 
 .btn {
-    width: 45%;
-    padding: 7px;
-    margin-top: 13px;
-    background-color: #013255;
-    color: white;
-    border: none;
-    font-size: 20px;
-    font-weight:400;
-    line-height: 28px;
-    border-radius: 8px;
-    outline: none;
+	width: 70%;
+	padding: 7px;
+	margin-top: 13px;
+	background-color: #013255;
+	color: white;
+	border: none;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+	border-radius: 8px;
+	outline: none;
+	cursor: pointer;
 }
 
 p {
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 25px;
-    margin-left: 70px;
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 25px;
 }
 
 a {
-    text-decoration: none;
-    color: #013255;
-    font-weight: bolder;
+	text-decoration: none;
+	color: #013255;
+	font-weight: bolder;
 }
 
 .signup {
-    background-color: white;
-    color: black;
-    border:none;
-    border: 1px solid black;
-    margin-top: 18px;
-    padding: 7px;
-    font-size: 18px;
-    font-weight: 500;
-    width: 370px;
-    border-radius: 9px;
-    height: 50px;
+	background-color: white;
+	color: black;
+	border: none;
+	border: 1px solid black;
+	margin-top: 18px;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	width: 70%;
+	border-radius: 9px;
+	height: 50px;
+	cursor: pointer;
 }
 
 .google {
-    width: 25px;
-    float: left;
-    margin-left: 30px;
+	width: 25px;
+	float: left;
+	margin-left: 50px;
 }
 
-footer {
-    margin-top: auto;
-    height: 8vh;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 45% 25% 30%;
-    background: #013255;
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-    color: white;
-}
-
-footer .info-div {
-    justify-content: center;
-}
-
-footer p {
-    margin: 0 8%;
-}
-
-footer p > a {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #D2D2D2;
-}
-
-footer img {
-    margin: 0 1%;
+.barcode {
+	width: 80%;
+	border-radius: 20px;
+	margin-top: 60px;
 }

@@ -1,162 +1,154 @@
 body {
-    margin: 0;
-    padding: 0;
-    background: url("./img/claudio-schwarz-VaeGMpaSlck-unsplash 2.png");
+	margin: 0;
+	padding: 0;
+	background: url("../assets/image/png/claudio-schwarz-VaeGMpaSlck-unsplash\ 2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-header{
-    background: #013255;
-    height: 7vh;
+header {
+	background: #013255;
+	height: 7vh;
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 150%;
-    margin-left: 1rem;
-    letter-spacing: 0.25px;
-
-    color: #FFFFFF;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 150%;
+	margin-left: 1rem;
+	letter-spacing: 0.25px;
+	padding-top: 10px;
+	color: #ffffff;
 }
 
 .big-container {
-    background: #97B3CB;
-    Offset: 0px, 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    display: flex;
-    height: 65vh;
-    width: 60%;
-    margin: auto;
-    padding-right: 3%;
+	background: #97b3cb;
+	offset: 0px, 4px rgba(0, 0, 0, 0.25);
+	border-radius: 25px;
+	display: flex;
+	height: 65vh;
+	width: 60%;
+	margin: auto;
+	padding-right: 3%;
 }
 
 .leftDiv {
-    width: 490px;
+	width: 490px;
 }
 
 .barcode {
-    border-radius: 25px;
-    height: 205px;
-    margin-left: 128px;
-    margin-top: 88px;
-    width: 198px
+	border-radius: 20px;
+	height: 205px;
+	margin-left: 128px;
+	margin-top: 100px;
+	width: 210px;
 }
 
 .rightDiv {
-    margin-top: 20px;
+	margin-top: 70px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .emailLabel {
-    border-radius: nullpx;
-    color: #013255;
-    font-size: 16px;
-    height: 24px;
-    letter-spacing: 0em;
-    line-height: 24px;
-    text-align: left;
+	color: #013255;
+	font-size: 16px;
+	height: 24px;
+	letter-spacing: 0em;
+	line-height: 24px;
+	text-align: left;
 }
 
 .passwordLabel {
-    border-radius: nullpx;
-    color: #013255;
-    height: 24px;
-    font-size: 16px;
-    letter-spacing: 0em;
-    line-height: 24px;
-    text-align: left;
+	color: #013255;
+	height: 24px;
+	font-size: 16px;
+	letter-spacing: 0em;
+	line-height: 24px;
+	text-align: left;
 }
 
-
 .emailInput {
-    border: 1px solid #013255;
-    border-radius: 5px;
-    height: 31px;
-    margin-bottom: 30px;
-    padding: 4px;
-    width: 331px;
+	border: 1px solid #013255;
+	border-radius: 5px;
+	height: 31px;
+	margin-bottom: 30px;
+	padding: 4px;
+	width: 331px;
+	background: #97b3cb;
 }
 
 .passwordInput {
-    border: 1px solid #013255;
-    border-radius: 5px;
-    height: 31px;
-    padding: 4px;
-    width: 331px;
-    margin-bottom: 5%;
+	border: 1px solid #013255;
+	border-radius: 5px;
+	height: 31px;
+	padding: 4px;
+	width: 331px;
+	margin-bottom: 5%;
+	background: #97b3cb;
 }
 
 .logIn {
-    background: #013255;
-    border: 0px;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    height: 37px;
-    left: 554px;
-    padding: 8px 16px 8px 16px;
-    top: 512px;
-    width: 341px;
+	background: #013255;
+	border: 0px;
+	border-radius: 8px;
+	color: white;
+	cursor: pointer;
+	height: 37px;
+	left: 554px;
+	padding: 8px 16px 8px 16px;
+	top: 512px;
+	width: 341px;
 }
 
 .forgot {
-    font-family: Inter;
-    font-size: 15px;
-    letter-spacing: 0em;
-    margin: auto;
-    margin-bottom: 4%;
-    margin-left: 40px;
-    width:65%;
+	font-family: Inter;
+	font-size: 15px;
+	letter-spacing: 0em;
+	margin-top: 5px;
+	margin-bottom: 4%;
+	float: right;
+	width: 100%;
 }
 
 .click {
-    color: #013255;
-    font-weight: 600;
-    margin-left: 1px;
+	color: #013255;
+	font-weight: 600;
+	margin-left: 1px;
 }
 
 .googleImage {
-    height: 15px;
-    margin-left: 25px;
-    margin-right: 35px;
+	height: 15px;
+	margin-left: 25px;
+	margin-right: 35px;
 }
 
 .googleButton {
-    border: 1px solid black;
-    background: white;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 15px;
-    height: 35px;
-    margin-top: 25px;
-    margin-bottom: %;
-    padding: 8px 16px 8px 16px;
-    text-align: left;
-    width: 341px;
+	border: 1px solid black;
+	background: white;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 15px;
+	height: 35px;
+	margin-top: 25px;
+	margin-bottom: 8px;
+	padding: 8px 16px 8px 16px;
+	text-align: left;
+	width: 341px;
 }
 
 .dont {
-    color: linear-gradient(0deg, #000000, #000000),
-    linear-gradient(0deg, #013255, #013255);
-    border-radius: nullpx;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    height: 24px;
-    letter-spacing: 0em;
-    line-height: 24px;
-    margin-left: 68px;
-    margin-top: 0px;
+	font-size: 15px;
+	font-family: Montserrat;
+	font-weight: 500;
+	height: 24px;
+	margin-top: 0px;
 }
 
 .signUp {
-    background-color: #97B3CB;
-    border: 0px;
-    color: #013255;
-    font-weight: 600;
-    margin-left: 1px;
+	color: #013255;
+	font-weight: 600;
 }
