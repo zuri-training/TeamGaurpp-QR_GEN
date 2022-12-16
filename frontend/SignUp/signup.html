@@ -14,15 +14,16 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:wght@400;500;600&display=swap"
         rel="stylesheet">
     
-    <link rel="stylesheet" href="../style.css">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
     <link rel="stylesheet" href="signup.css">
+    <!-- <link rel="stylesheet" href="../landing.css"> -->
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <h1>QR CODE GEN</h1>
     </header>
-    <main>
+    <section class="big-container">
         <form method="POST" id="sign-up-form">
             <div class="label">
                 <label for="name">Full name</label>
@@ -38,7 +39,7 @@
                         type="email" 
                         name="email" 
                         id = "email"
-                        placeholder="Email" 
+                        placeholder="Enter your email" 
                         required
                     >
                 <label for="pwd">Password</label>
@@ -48,7 +49,7 @@
                         id = "password"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Must contain at least an uppercase, a lowercase,one number, one special number"
-                        placeholder="Password"
+                        placeholder="Create password"
                         required
                     >
                 <label for="cpwd">Confirm Password</label>
@@ -56,40 +57,21 @@
                         type="password" 
                         name="cpwd" 
                         id = "cpwd"
-                        placeholder="Re-type Password"
+                        placeholder="Re-enter your Password"
                         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
                         title="Must be the same with password" 
                         required
                     >
                 <button type="submit" class="btn">Sign Up</button>
-                <p>Already have an account?<a href="../logInPage/login.html">Sign In</a></p>
+                <p>Already have an account? <a href="../logInPage/login.html">Sign In</a></p>
                 <button type="submit" class="signup"><img class="google" src="../assets/image/png/google-logo.png" alt="google-logo"> Sign
                     up with Google</button>
             </div>
         </form>
-    </main>
-    <footer>
-        <div class = "info-div">
-            <p><a href="\">FAQs</a></p>
-            <p><a href="\">About US</a></p>
-            <p><a href="\">Help</a></p>
-        </div>
-        <div>
-            <span>Contact Us</span>
-            <img 
-                src="../assets/image/png/Twitter.png"
-                alt="twitter"
-            />
-            <img 
-                src="../assets/image/png/Facebook.png"
-                alt="facebook"
-            />
-        </div>
-        <div>
-            <img src="../assets/image/png/Copyright.png" alt="copyright"/>
-            <span>2022 Team Gaurpp</span>
-        </div>
-    </footer>
+        <div class="rightDiv">
+                <img class="barcode" src="../assets/image/svg/image 5.svg" alt="">
+            </div>
+    </section>
 
 
     <script src="signup.js" type="text/javascript" async defer></script>
