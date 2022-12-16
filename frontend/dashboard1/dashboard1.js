@@ -33,6 +33,8 @@ window.onload = () => {
       qrCodesDivs.forEach((qrCodeDiv) => {
         qrCodeDiv.addEventListener("click", () => {
           const qrCodeId = qrCodeDiv.getAttribute("id");
+          localStorage.setItem("currentQrCode", qrCodeId);
+          window.location.href = "../dashboard5/dashboard5.html";
           console.log(qrCodeId);
         });
       });
