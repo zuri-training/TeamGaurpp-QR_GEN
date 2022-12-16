@@ -131,3 +131,29 @@ nav > ul > li >a {
 .no-margin-top {
     margin-top: none !important;
 }
+
+/* Display message for users on smaller screens */
+
+#user-screen {
+    display: none;
+    z-index: 0;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+#user-screen div {
+    margin: auto;
+    margin-top: 150px;
+}
+
+/* media queries */
+
+@media (max-width: 1010px) {
+    #user-screen {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
