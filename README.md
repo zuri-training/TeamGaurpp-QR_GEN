@@ -34,7 +34,7 @@ A platform that allows users generate QR code that specifically does something w
 ### Screenshot
 This incude images of our design sketch, Data Schema, and the Project Design
 
-![](images/data-schema.png)
+![](frontend/assets/image/png/data-schema.png)
 
 ### Links
 - API Hosting: [Vercel](https://qr-gen-api.vercel.app/)
