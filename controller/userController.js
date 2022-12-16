@@ -30,7 +30,7 @@ exports.registerUser = async (req, res) => {
 		console.log(err);
 		return res
 			.status(500)
-			.json({ message: "An Error Occurred, Please contact Admin" });
+			.json({ message: err.message});
 	}
 };
 
@@ -112,7 +112,7 @@ exports.changePassword = async (req, res) => {
 	try {
 		const { oldPassword, newPassword, confirmPassword } = req.body;
 		const { id } = req.user;
-		const findUser = await User.findOne({ id });
+		const findUser = await User.findById(id);
 		if (!findUser) {
 			return res.status(404).json({ message: "Invalid Email Address" });
 		}
