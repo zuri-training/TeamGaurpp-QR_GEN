@@ -28,9 +28,7 @@ exports.registerUser = async (req, res) => {
 			.json({ message: "User created", user: newUser, token: token });
 	} catch (err) {
 		console.log(err);
-		return res
-			.status(500)
-			.json({ message: err.message});
+		return res.status(500).json({ message: err.message });
 	}
 };
 
@@ -95,11 +93,16 @@ exports.resetPassword = async (req, res) => {
 		if (newPassword !== confirmPassword) {
 			return res.status(401).json({ message: "Passwords do not match" });
 		}
+		const findUser = await User.findOne({ email: email });
+		if (!findUser) {
+			return res.status(404).json({ message: "Invalid Email Address" });
+		}
 		const hashedPassword = await bcrypt.hash(newPassword, 10);
-		await User.findOneAndUpdate({ email }, { password: hashedPassword });
+		findUser.password = hashedPassword;
+		await findUser.save();
 		return res
 			.status(200)
-			.json({ message: "Password Updated Successfully" });
+			.json({ message: "Password updated successfully" });
 	} catch (err) {
 		console.log(err);
 		return res
