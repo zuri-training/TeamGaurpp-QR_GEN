@@ -131,6 +131,10 @@ a{
     font-weight: 600;
 }
 
+.is-working:hover {
+    cursor: pointer;
+}
+
 .container .card_container{
     display: grid;
     grid-template-columns: auto auto auto ;
