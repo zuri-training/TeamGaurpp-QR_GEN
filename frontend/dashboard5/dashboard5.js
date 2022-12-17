@@ -46,3 +46,9 @@ window.onload = () => {
     })
 }
 
+const logOut = document.getElementById("log-out");
+logOut.addEventListener("click", () => {
+	localStorage.removeItem("token");
+	localStorage.removeItem("user");
+	window.location.href = "../index.html";
+});

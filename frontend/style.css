@@ -178,6 +178,6 @@ nav > ul > li > a {
     }
 
     .mobile {
-        display: block;
+		display: flex;
     }
 }
