@@ -6,57 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mobile" style="height: 30vh; margin: auto; width: 75%; flex-direction:column; align-items: center; justify-content: space-evenly;">
-        <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo">
-        <p class="bold">QR GEN TEAM GAURPP</p>
-        <h4 style="color:#013255;">This website is not available for mobile and tablet devices</h4>
-    </div>
-    <section class="hide-mobile">
         <section class="grid-col3_nav nav">
-            <div>
-                <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo">
-                <p class="bold">QR GEN TEAM GAURPP</p>
-            </div>
-            <div>
-                <nav>
-                    <ul class="bold">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">RESOURCES</a></li>
-                        <li><a href="#">PRODUCTS</a></li>
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                    <a class="navbar-brand" href="#home">
+                        <img src="assets/image/svg/Team Gaurpp logo.svg" alt="logo">
+                        <p class="bold">QR GEN TEAM GAURPP</p>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="bold navbar-nav me-auto mb-2 mb-lg-0 p-4">
+                            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link text-nowrap" href="#">ABOUT US</a></li>
+                            <li class="nav-item"><a class="nav-link text-nowrap" href="#">CONTACT US</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">RESOURCES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">PRODUCTS</a></li>
+                        </ul> 
+                        <form class="d-flex">
+                            <a href="./logInPage/login.html" ><button id="nav-btn1" class="btn text-nowrap" type="button">SIGN IN</button></a>
+                            <a href="./SignUp/signup.html" ><button id="nav-btn2" class="btn text-white" type="button">REGISTER</button></a>
+                        </form>    
+                      </div>
+                    </div>
                 </nav>
-            </div>
-            <div class="nav-btn_div bold" id="nav-btn">
-                <a href="./logInPage/login.html" id="nav-btn1">SIGN IN</a>
-                <a href="./SignUp/signup.html" id="nav-btn2">REGISTER</a>
-            </div>
         </section>
         <section>
             <div class="grid-col2 align-left grid-1b">
-                <div>
+                <div class="info1">
                     <h1 class="bold">Perform that action <br> in codes.</h1>
                     <p>Qr gen is a platform you can get your qr-code generation <br>
                         done in a secure, easy and fast method. Customize each QR- <br> code just to fit you personal need.</p>
                     <div class="nav-btn_div bold">
-                        <a id="nav-btn2" class="body-btn">GENERATE QR CODE</a>
+                        <a id="nav-btn3" class="body-btn">GENERATE QR CODE</a>
                     </div>
                 </div>
-                <div class="large-qr">
+                <div class="large-qr qr1">
                     <img 
-                        src="./assets/image/svg/qr extra large.svg"
-                        alt="large qr code"
+                        src="./assets/image/svg/barcode.svg"
+                        alt="qr code"
                     />
                 </div>
             </div>
         </section>
-        <section class="hide-mobile">
-            <div class="grid-col2 align-left grid-1b">
-                <div>
+
+            <div class="grid-col3 align-left grid-1b">
+                <div class="info2">
                     <img src="./assets/image/svg/undraw_teaching_re_g7e3 1.svg" alt="body-img">
                 </div>
                 <div>
@@ -66,22 +66,20 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="hide-mobile">
-            <div class="grid-col2 align-left grid-1b">
-                <div>
+            <div class="grid-col4 align-left grid-1b">
+                <div class="info4">
                     <p class="no-margin-top large-paragraph">Do you have an issue? <br> Contact us and we will <br> be glad to help you</p>
                 </div>
                 <div>
-                    <p>We’re proud to provide our customers with <br> always-on, 24/7 support. Morning, noon, or night <br> our team is logged on and ready to help. if you’ve <br> got a question, we’re here to answer it.</p>
+                    <p class="cont-p">We’re proud to provide our customers with always-on, 24/7 support. Morning, noon, or night our team is logged on and ready to help. if you’ve <br> got a question, we’re here to answer it.</p>
                     <div class="nav-btn_div bold">
                         <a href="#" id="nav-btn2" class="body-btn">CONTACT US</a>
                     </div>
                 </div>
             </div>
-        </section>
+       
     </main>
-    <footer class="footer-container hide-mobile">
+    <footer class="footer-container container-fluid">
         <div class="footer-first">
             <h2 class="footer-pages">Pages</h2>
             <div class="footer-list">
@@ -92,7 +90,6 @@
                 <a href="" class="footer-create">Create Qr code</a>
             </div>
         </div>
-  
         <div class="footer-second">
             <img src="./assets/image/svg/barcode.svg" alt="" class="footer-barcode">
             <h2 class="footer-qr">QR GEN TEAM GAURPP</h2>
@@ -103,7 +100,7 @@
         <div class="footer-third">
             <div style="width: 100%; text-align:left; margin-left: auto;">
                 <h2 class="footer-have">HAVE QUESTIONS?</h2>
-                <a href="" class="footer-support" style="font-size: 14px;">Support@QR-Gen Team gaurpp.com</a>
+                <a href="#" class="footer-support" style="font-size: 14px;">Support@QR-Gen Team gaurpp.com</a>
             </div>
             <div class="footer-images">
                 <img class="footer-facebook" src="./assets/image/svg/🦆 icon _facebook fill_.svg" alt="Image of ">
@@ -113,5 +110,6 @@
         </div>
     </footer>
     <script src="script.js" type="text/javascript" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>    
 </body>
 </html>

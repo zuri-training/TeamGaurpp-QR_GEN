@@ -132,11 +132,15 @@ footer {
     color: white;
     display: flex;
     padding-bottom: 1%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .footer-container a  {
     margin-right: 0;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -198,9 +202,9 @@ footer {
 .footer-barcode {
     height: 49px;
     width: 49px;
-    margin-left: 397px;
+    /* margin-left: 407px; */
     margin-bottom: 0PX;
-    margin-top: 30px;
+
 }
 
 .footer-qr {
@@ -210,18 +214,26 @@ footer {
     letter-spacing: 0px;
     line-height: 24px;
     height: 24px;
-    margin-left: 306px;
+    /* margin-left: 306px; */
     margin-top: 5px;
+    margin-bottom: 80px;
     text-align: left;
     width: 241px;
     color: white;
 }
 
+.footer-second{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 .footer-second hr {
-    margin-left: 210px;
-    margin-right: 8px;
+    width: 100%;
     margin-bottom: 0px;
-    margin-top: 80px;
+    border-bottom: 1px solid white;
 }
 
 .footer-copy {
@@ -231,14 +243,14 @@ footer {
     line-height: 15px;
     letter-spacing: 0.4000000059604645px;
     margin-top: 10px;
-    margin-left: 170px;
+    /* margin-left: auto; */
     text-align: left;
     color: white;
 }
 
 .footer-have {
     font-family: Poppins;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 400;
     letter-spacing: 0px;
     line-height: 39px;
@@ -249,8 +261,8 @@ footer {
 
 .footer-support {
     font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 50;
+    font-size: 8px;
+    font-weight: 40;
     height: 24px;
     text-decoration-line: underline;
     letter-spacing: 0.5px;
@@ -265,18 +277,173 @@ footer {
 
 .footer-facebook {
     cursor: pointer;
-    height: 94px;
-    width: 94px;
+    height: 80px;
+    width: 80px;
 }
 
 .footer-twitter {
     cursor: pointer;
-    height: 94px;
-    width: 94px;
+    height: 80px;
+    width: 80px;
 }
 
 .footer-linkedin {
     cursor: pointer;
-    height: 94px;
-    width: 94px;
+    height: 80px;
+    width: 80px;
 }
+@media (max-width: 480px) {
+	footer {
+        margin-top: 2rem;
+        background: #013255;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 1%;
+        justify-content: space-between;
+    }
+    
+    .footer-container a  {
+        margin-right: 0;
+    }
+    
+    
+    .footer-pages {
+        font-family: Montserrat;
+        font-size: 38px;
+        font-weight: 700;
+        height: 57px;
+        letter-spacing: 0.25px;
+        line-height: 57px;
+        margin-bottom: 0px;
+        margin-left: 50px;
+        margin-top: 5px;
+        width: 120px;
+        color: white;
+    }
+    
+    .footer-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        color: white
+    }
+    
+    .footer-list a {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 50px;
+        margin-top: 12px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .footer-home{
+        width: 96px;
+    }
+    
+    .footer-about{
+        width: 80px;
+    }
+    
+    .footer-contact{
+        width: 95px;
+    }
+    
+    .footer-faq{
+        width: 37px;
+    }
+    
+    .footer-create{
+        height: 24px;
+        width: 132px;
+    }
+    
+    .footer-barcode {
+        height: 49px;
+        width: 49px;
+        margin-bottom: 0PX;
+        margin-top: 30px;
+    }
+    
+    .footer-qr {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0px;
+        line-height: 24px;
+        height: 24px;
+        text-align: left;
+        width: 241px;
+        color: white;
+    }
+    
+    .footer-second hr {
+       width: 100%;
+       border: 1px solid white;
+    }
+    
+    .footer-copy {
+        font-family: Montserrat;
+        font-size: 12px;
+        height: 20px;
+        line-height: 15px;
+        letter-spacing: 0.4000000059604645px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+    }
+    
+    .footer-have {
+        font-family: Poppins;
+        font-size: 26px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 39px;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        color: white;
+    }
+    
+    .footer-support {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 50;
+        height: 24px;
+        text-decoration-line: underline;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+        text-align: right;
+        color: white;
+    }
+    
+    .footer-images {
+        margin-top: 50px;
+    }
+    
+    .footer-facebook {
+        cursor: pointer;
+        height: 94px;
+        width: 94px;
+    }
+    
+    .footer-twitter {
+        cursor: pointer;
+        height: 94px;
+        width: 94px;
+    }
+    
+    .footer-linkedin {
+        cursor: pointer;
+        height: 94px;
+        width: 94px;
+    }
+	}
