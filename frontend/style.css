@@ -163,7 +163,7 @@ nav > ul > li > a {
     margin: auto;
 }
 
-.mobile {
+.hide-mobile {
     display: none;
 }
 
