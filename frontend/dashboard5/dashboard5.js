@@ -33,6 +33,7 @@ window.onload = () => {
     })
 
     deleteQrCode.addEventListener("click", () => {
+        deleteQrCode.innerHTML = "Deleting...";
         fetch(url + qrCodeId, {
             method: "DELETE",
             headers: {Authorization: `Bearer ${token}`},

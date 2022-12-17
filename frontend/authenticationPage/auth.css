@@ -22,7 +22,7 @@
 }
 
 body, html {
-    color: black;
+    color: var(--main_color);
     font-family: var(--Poppins);
 }
 
@@ -73,9 +73,22 @@ body, html {
     border-radius: 8px;
 }
 
+.resend {
+    font-size: 14px;
+    color: var(--main_color);
+    font-weight: 200!important;
+    margin-top: -18px;
+    text-align: left;
+}
+
+.resend > span {
+    font-weight: 800;
+    /* cursor: pointer; */
+}
+
 .form_d5pw form input[type=submit] {
     height: 50px;
-    width: 100%;
+    width: 90%;
     background-color: var(--main_color);
     color: white;
     font-family: var(--Poppins);
@@ -84,6 +97,8 @@ body, html {
     border: none;
     outline: none;
     border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 60px;
 }
 
 

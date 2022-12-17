@@ -62,7 +62,7 @@ html {
 	font-size: 17px;
 }
 
-.form_d5pw form input[type="password"] {
+.form_d5pw form .pword {
 	width: 70%;
 	margin-bottom: 25px;
 	border: 1px solid var(--main_color);

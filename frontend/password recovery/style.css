@@ -26,31 +26,19 @@ body, html {
     font-family: var(--Poppins);
 }
 
-/* hide scrollbar */
-
-/* ::-webkit-scrollbar {
-    display: none;
-} */
-
-/* Dashboard 5 styling */
 
 /* header styling */
 .header_d5 {
-    height: 55px;
-    max-height: 55px;
+    height: 70px;
     width: 100%;
     background-color: var(--main_color);
-    color: white;
-    display: grid;
-    grid-template-columns: .5fr 1fr .5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: ". . .";
     text-align: center;
-    margin: auto;
 }
 
 .header_d5 > h1 {
     margin-top: .5rem;
+    color: white;
+
 }
 
 #right-header_d5 {
@@ -409,4 +397,10 @@ body, html {
 .form-text_d5pw {
     width: 90%;
     margin: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
